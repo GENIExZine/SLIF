@@ -1,0 +1,133 @@
+:root{
+  --red:#8B0000; --saffron:#FF6B00; --gold:#D4A017;
+  --navy:#0A1628; --navy2:#1a2f5e;
+  --cream:#FFF8EE; --lb:#FFF3E0; --white:#fff; --gray:#555;
+}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Lato',sans-serif;background:var(--cream);color:var(--navy);overflow-x:hidden}
+img{max-width:100%;display:block}
+a{text-decoration:none}
+ul{list-style:disc;padding-left:18px}
+
+/* ── TOP BAR ── */
+.topbar{background:var(--red);color:var(--gold);text-align:center;padding:7px 12px;font-size:.8rem;letter-spacing:.04em}
+
+/* ── HEADER ── */
+header{background:linear-gradient(135deg,var(--navy),var(--navy2),#0d1f40);padding:34px 16px 24px;text-align:center;position:relative;overflow:hidden}
+header::before{content:'';position:absolute;inset:0;background:repeating-linear-gradient(45deg,transparent,transparent 20px,rgba(212,160,23,.04) 20px,rgba(212,160,23,.04) 21px);pointer-events:none}
+.hlogo{width:110px;height:110px;border-radius:50%;margin:0 auto 16px;overflow:hidden;border:4px solid var(--gold);box-shadow:0 0 0 8px rgba(212,160,23,.2),0 10px 32px rgba(0,0,0,.55);animation:pulse 3s ease-in-out infinite}
+.hlogo img{width:100%;height:100%;object-fit:cover}
+@keyframes pulse{0%,100%{box-shadow:0 0 0 8px rgba(212,160,23,.2),0 10px 32px rgba(0,0,0,.55)}50%{box-shadow:0 0 0 16px rgba(212,160,23,.07),0 10px 32px rgba(0,0,0,.55)}}
+.hname{font-family:'Tiro Devanagari Hindi',serif;font-size:clamp(1.6rem,5.5vw,2.7rem);color:var(--gold);line-height:1.3;text-shadow:0 2px 12px rgba(0,0,0,.55)}
+.hname-en{font-family:'Playfair Display',serif;font-size:clamp(.9rem,3vw,1.4rem);color:#ccc;margin-top:7px;letter-spacing:.06em}
+.hsub{color:var(--saffron);font-size:.92rem;margin-top:8px;letter-spacing:.08em}
+.hbadges{display:flex;flex-wrap:wrap;justify-content:center;gap:9px;margin-top:16px}
+.hbadge{background:rgba(212,160,23,.12);border:1px solid rgba(212,160,23,.38);color:var(--gold);padding:5px 14px;border-radius:20px;font-size:.76rem}
+
+/* ── NAV ── */
+nav{background:var(--red);display:flex;flex-wrap:wrap;justify-content:center;position:sticky;top:0;z-index:999;box-shadow:0 4px 14px rgba(0,0,0,.35)}
+nav a{color:#fff;padding:13px 16px;font-size:.83rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;transition:background .2s}
+nav a:hover{background:var(--saffron)}
+
+/* ── HERO STRIP ── */
+.hero{background:linear-gradient(90deg,var(--saffron),var(--gold),var(--saffron));text-align:center;padding:13px 16px;font-family:'Playfair Display',serif;font-size:.97rem;color:var(--navy);font-style:italic;letter-spacing:.04em}
+
+/* ── SECTION COMMON ── */
+section{padding:52px 16px}
+.sec-title{font-family:'Playfair Display',serif;font-size:clamp(1.35rem,4vw,2rem);color:var(--red);text-align:center;margin-bottom:34px;line-height:1.3}
+.sec-title::after{content:'';display:block;width:66px;height:4px;background:linear-gradient(90deg,var(--saffron),var(--gold));border-radius:2px;margin:9px auto 0}
+.sec-title span{font-family:'Tiro Devanagari Hindi',serif;display:block;font-size:.82em;color:var(--saffron);margin-top:4px}
+
+/* ── ABOUT ── */
+#about{background:var(--white)}
+.agrid{max-width:900px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.acard{background:var(--lb);border-left:5px solid var(--saffron);border-radius:10px;padding:22px}
+.acard h3{font-family:'Tiro Devanagari Hindi',serif;color:var(--red);font-size:.96rem;margin-bottom:10px}
+.acard p,.acard li{font-size:.89rem;line-height:1.85;color:var(--gray)}
+
+/* ── CAMPUS ── */
+#campus{background:var(--navy)}
+#campus .sec-title{color:var(--gold)}
+#campus .sec-title::after{background:var(--saffron)}
+.campus-box{max-width:760px;margin:0 auto;border:5px solid var(--gold);border-radius:14px;overflow:hidden;box-shadow:0 14px 44px rgba(0,0,0,.65)}
+.campus-box img{width:100%;display:block}
+.campus-cap{background:var(--red);color:var(--gold);text-align:center;padding:13px;font-family:'Tiro Devanagari Hindi',serif;font-size:.92rem}
+
+/* ── PRINCIPAL ── */
+#principal{background:var(--lb)}
+.pcard{max-width:430px;margin:0 auto;background:var(--white);border-radius:18px;overflow:hidden;box-shadow:0 10px 36px rgba(139,0,0,.18);border:2px solid var(--gold);text-align:center;padding-bottom:28px}
+.pphoto{width:100%;height:310px;object-fit:cover;object-position:top center;display:block}
+.pbody{padding:20px 24px 0}
+.pname{font-family:'Tiro Devanagari Hindi',serif;font-size:1.6rem;color:var(--red);margin-bottom:5px}
+.prole{font-size:.81rem;color:var(--saffron);font-weight:700;text-transform:uppercase;letter-spacing:.07em;margin-bottom:11px}
+.pqual{font-size:.88rem;color:var(--gray);line-height:1.8;margin-bottom:16px}
+.pphone{display:inline-flex;align-items:center;gap:7px;background:var(--red);color:#fff;padding:9px 26px;border-radius:26px;font-size:.88rem;font-weight:700;transition:background .22s}
+.pphone:hover{background:var(--saffron)}
+
+/* ── TEACHERS ── */
+#teachers{background:var(--white)}
+.tgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:22px;max-width:1140px;margin:0 auto}
+.tcard{background:var(--cream);border-radius:14px;overflow:hidden;border:1px solid rgba(212,160,23,.32);position:relative;transition:transform .28s,box-shadow .28s}
+.tcard::before{content:'';position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,var(--saffron),var(--gold));z-index:2}
+.tcard:hover{transform:translateY(-7px);box-shadow:0 14px 34px rgba(139,0,0,.16)}
+.tpwrap{width:100%;height:210px;overflow:hidden;background:#ddd}
+.tphoto{width:100%;height:100%;object-fit:cover;object-position:top center;display:block;transition:transform .35s}
+.tcard:hover .tphoto{transform:scale(1.04)}
+.tinfo{padding:14px 13px 16px;text-align:center}
+.tname{font-family:'Tiro Devanagari Hindi',serif;font-size:1rem;color:var(--red);margin-bottom:6px}
+.tsubj{display:inline-block;background:var(--saffron);color:#fff;font-size:.68rem;font-weight:700;padding:3px 11px;border-radius:12px;letter-spacing:.04em;margin-bottom:7px}
+.tqual{font-size:.74rem;color:var(--gray);line-height:1.56}
+.tmob{font-size:.76rem;color:var(--red);font-weight:700;margin-top:7px}
+
+/* ── SUPPORT STAFF ── */
+#staff{background:var(--lb)}
+.sgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(185px,1fr));gap:22px;max-width:1000px;margin:0 auto}
+.scard{background:var(--white);border-radius:14px;overflow:hidden;border:1px solid rgba(139,0,0,.18);position:relative;text-align:center;transition:transform .28s,box-shadow .28s}
+.scard::before{content:'';position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,var(--red),var(--gold));z-index:2}
+.scard:hover{transform:translateY(-6px);box-shadow:0 12px 30px rgba(139,0,0,.14)}
+.spwrap{width:100%;height:200px;overflow:hidden;background:#ddd}
+.sphoto{width:100%;height:100%;object-fit:cover;object-position:top center;display:block;transition:transform .35s}
+.scard:hover .sphoto{transform:scale(1.04)}
+.sinfo{padding:13px 13px 15px}
+.sname{font-family:'Tiro Devanagari Hindi',serif;font-size:1rem;color:var(--red);margin-bottom:6px}
+.srole{display:inline-block;background:var(--red);color:#fff;font-size:.68rem;font-weight:700;padding:3px 11px;border-radius:12px;letter-spacing:.04em;margin-bottom:6px}
+.squal{font-size:.74rem;color:var(--gray);margin-top:4px}
+.smob{font-size:.76rem;color:var(--red);font-weight:700;margin-top:6px}
+
+/* ── CONTACT ── */
+#contact{background:var(--navy)}
+#contact .sec-title{color:var(--gold)}
+#contact .sec-title::after{background:var(--saffron)}
+.cgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;max-width:900px;margin:0 auto}
+.citem{background:rgba(255,255,255,.07);border:1px solid rgba(212,160,23,.3);border-radius:12px;padding:24px 20px;color:#ddd;text-align:center}
+.ci{font-size:2rem;margin-bottom:10px}
+.citem h4{color:var(--gold);margin-bottom:9px;font-size:.87rem;letter-spacing:.07em;text-transform:uppercase}
+.citem p{font-size:.87rem;line-height:1.78}
+.citem a{color:var(--saffron)}
+.citem a:hover{text-decoration:underline}
+.udise{font-size:1.1rem;font-weight:700;color:var(--gold)}
+
+/* ── FOOTER ── */
+footer{background:var(--red);color:rgba(255,255,255,.82);text-align:center;padding:24px 16px;font-size:.82rem;line-height:1.7}
+footer strong{color:var(--gold)}
+.fsub{margin-top:10px;opacity:.52;font-size:.73rem}
+
+/* ── SCROLL REVEAL ── */
+.rv{opacity:0;transform:translateY(28px);transition:opacity .6s ease,transform .6s ease}
+.rv.on{opacity:1;transform:translateY(0)}
+
+/* ── RESPONSIVE ── */
+@media(max-width:768px){
+  .agrid{grid-template-columns:1fr}
+  .tgrid{grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:14px}
+  .tpwrap{height:170px}
+  .sgrid{grid-template-columns:repeat(auto-fill,minmax(145px,1fr));gap:14px}
+  .spwrap{height:170px}
+  nav a{padding:10px 11px;font-size:.76rem}
+}
+@media(max-width:480px){
+  .hname{font-size:1.45rem}
+  .pphoto{height:250px}
+  .tgrid,.sgrid{grid-template-columns:1fr 1fr}
+}

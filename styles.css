@@ -1,0 +1,2331 @@
+/* ════════════════════════════════════════════════════════════════════
+   P.M. SHRI +2 HIGH SCHOOL, BARBIGHA (SHEIKHPURA, BIHAR)
+   Official Modern Institutional Stylesheet
+   UDISE: 10262907004 | Est. 1933 | Affiliated to BSEB Patna
+════════════════════════════════════════════════════════════════════ */
+
+:root {
+  --red: #8B0000;
+  --red-dark: #660000;
+  --red-light: #A52A2A;
+  --saffron: #FF6B00;
+  --saffron-light: #FF8533;
+  --gold: #D4A017;
+  --gold-light: #F3C644;
+  --gold-dim: rgba(212, 160, 23, 0.18);
+  --navy: #0A1628;
+  --navy2: #162444;
+  --navy3: #1F335C;
+  --cream: #FFFDF9;
+  --cream-soft: #FFF8EE;
+  --lb: #FFF3E0;
+  --white: #FFFFFF;
+  --gray-dark: #2C3E50;
+  --gray: #555555;
+  --gray-light: #777777;
+  --border-light: rgba(212, 160, 23, 0.28);
+  --shadow-sm: 0 4px 12px rgba(0, 0, 0, 0.08);
+  --shadow-md: 0 8px 24px rgba(139, 0, 0, 0.12);
+  --shadow-lg: 0 16px 40px rgba(10, 22, 40, 0.22);
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-pill: 50px;
+  --transition: all 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+body {
+  font-family: 'Lato', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background: var(--cream);
+  color: var(--navy);
+  line-height: 1.6;
+  overflow-x: hidden;
+  width: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding-left: env(safe-area-inset-left, 0px);
+  padding-right: env(safe-area-inset-right, 0px);
+}
+
+button, a, input, select, textarea {
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: var(--transition);
+}
+
+ul {
+  list-style: none;
+}
+
+button, input, select, textarea {
+  font-family: inherit;
+}
+
+/* ── ACCESSIBLE FOCUS ── */
+:focus-visible {
+  outline: 3px solid var(--gold);
+  outline-offset: 3px;
+}
+
+/* ── TOP NOTIFICATION BAR ── */
+.topbar {
+  background: linear-gradient(90deg, var(--red-dark), var(--red), var(--red-dark));
+  color: var(--gold-light);
+  font-size: 0.82rem;
+  padding: 8px 16px;
+  border-bottom: 1px solid rgba(212, 160, 23, 0.3);
+  position: relative;
+  z-index: 1001;
+}
+
+.topbar-container {
+  max-width: 1300px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.topbar-left {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.topbar-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.topbar-sep {
+  opacity: 0.4;
+}
+
+.topbar-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.topbar-phone {
+  color: #fff;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.topbar-phone:hover {
+  color: var(--gold);
+  text-decoration: underline;
+}
+
+.lang-toggle-btn {
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid var(--gold);
+  color: var(--gold-light);
+  padding: 4px 12px;
+  border-radius: var(--radius-pill);
+  font-size: 0.78rem;
+  font-weight: 700;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  transition: var(--transition);
+}
+
+.lang-toggle-btn:hover {
+  background: var(--gold);
+  color: var(--navy);
+  transform: translateY(-1px);
+}
+
+/* ── HEADER ── */
+header {
+  background: linear-gradient(135deg, var(--navy), var(--navy2), #0d1f40);
+  padding: 36px 16px 28px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  border-bottom: 3px solid var(--gold);
+}
+
+header::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(45deg, transparent, transparent 24px, rgba(212, 160, 23, 0.035) 24px, rgba(212, 160, 23, 0.035) 25px);
+  pointer-events: none;
+}
+
+.header-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.hlogo-wrapper {
+  width: 116px;
+  height: 116px;
+  margin: 0 auto 16px;
+  position: relative;
+}
+
+.hlogo {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 4px solid var(--gold);
+  box-shadow: 0 0 0 7px rgba(212, 160, 23, 0.22), 0 10px 30px rgba(0, 0, 0, 0.55);
+  animation: logoPulse 3s ease-in-out infinite;
+  background: #fff;
+}
+
+.hlogo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 25%;
+}
+
+@keyframes logoPulse {
+  0%, 100% {
+    box-shadow: 0 0 0 7px rgba(212, 160, 23, 0.22), 0 10px 30px rgba(0, 0, 0, 0.55);
+  }
+  50% {
+    box-shadow: 0 0 0 14px rgba(212, 160, 23, 0.08), 0 10px 30px rgba(0, 0, 0, 0.55);
+  }
+}
+
+.hname {
+  font-family: 'Tiro Devanagari Hindi', 'Playfair Display', serif;
+  font-size: clamp(1.8rem, 5.5vw, 2.9rem);
+  font-weight: 900;
+  color: var(--gold-light);
+  line-height: 1.25;
+  text-shadow: 0 2px 14px rgba(0, 0, 0, 0.65);
+  margin-bottom: 4px;
+}
+
+.hname-en {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(1rem, 3.2vw, 1.45rem);
+  color: #e4e7eb;
+  letter-spacing: 0.05em;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.hsub {
+  color: var(--saffron-light);
+  font-size: 0.98rem;
+  letter-spacing: 0.06em;
+  font-weight: 500;
+}
+
+.hbadges {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.hbadge {
+  background: rgba(212, 160, 23, 0.12);
+  border: 1px solid rgba(212, 160, 23, 0.4);
+  color: var(--gold-light);
+  padding: 6px 16px;
+  border-radius: var(--radius-pill);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  backdrop-filter: blur(4px);
+  transition: var(--transition);
+}
+
+.hbadge:hover {
+  background: rgba(212, 160, 23, 0.25);
+  transform: translateY(-2px);
+}
+
+/* ── 8-OPTION NAVIGATION ── */
+nav {
+  background: var(--red);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.35);
+  border-bottom: 2px solid var(--gold);
+}
+
+.nav-container {
+  max-width: 1300px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 12px;
+}
+
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.nav-item {
+  color: #ffffff;
+  padding: 14px 17px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: var(--transition);
+}
+
+.nav-item i {
+  font-size: 0.95rem;
+}
+
+.nav-item:hover,
+.nav-item.active {
+  background: var(--saffron);
+  color: #ffffff;
+}
+
+.nav-item::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 3px;
+  background: var(--gold-light);
+  transition: width 0.25s ease;
+}
+
+.nav-item:hover::after,
+.nav-item.active::after {
+  width: 80%;
+}
+
+.nav-brand-mobile {
+  display: none;
+  color: var(--gold-light);
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 0.95rem;
+  letter-spacing: 0.02em;
+}
+
+.nav-toggle-btn {
+  display: none;
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: var(--radius-sm);
+  color: #fff;
+  font-size: 0.95rem;
+  font-weight: 700;
+  padding: 8px 14px;
+  cursor: pointer;
+  align-items: center;
+  gap: 8px;
+  min-height: 42px;
+  transition: var(--transition);
+}
+
+.nav-toggle-btn:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+/* ── HERO BANNER & MOTTO ── */
+.hero {
+  background: linear-gradient(90deg, #E65100, var(--saffron), var(--gold), var(--saffron), #E65100);
+  background-size: 200% auto;
+  animation: shineGradient 6s linear infinite;
+  text-align: center;
+  padding: 14px 16px;
+  font-family: 'Playfair Display', 'Tiro Devanagari Hindi', serif;
+  font-size: clamp(1rem, 2.6vw, 1.22rem);
+  color: var(--navy);
+  font-style: italic;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+@keyframes shineGradient {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 200% 50%; }
+}
+
+/* ── SECTION COMMON ── */
+section {
+  padding: 64px 20px;
+  position: relative;
+}
+
+.section-container {
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+.sec-title {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(1.6rem, 4.5vw, 2.35rem);
+  color: var(--red);
+  text-align: center;
+  margin-bottom: 40px;
+  line-height: 1.3;
+}
+
+.sec-title::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, var(--saffron), var(--gold));
+  border-radius: 2px;
+  margin: 12px auto 0;
+}
+
+.sec-title span {
+  font-family: 'Tiro Devanagari Hindi', serif;
+  display: block;
+  font-size: 0.82em;
+  color: var(--saffron);
+  margin-top: 6px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.sec-subtitle {
+  text-align: center;
+  max-width: 780px;
+  margin: -24px auto 36px;
+  color: var(--gray);
+  font-size: 0.96rem;
+  line-height: 1.7;
+}
+
+/* ── REVEAL ON SCROLL ── */
+.rv {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.65s cubic-bezier(0.2, 0.8, 0.2, 1), transform 0.65s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.rv.on {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ════════════════════════════════════════════════════════════════════
+   OPTION 1: ABOUT (विद्यालय परिचय)
+════════════════════════════════════════════════════════════════════ */
+#about {
+  background: var(--white);
+}
+
+.agrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.acard {
+  background: var(--lb);
+  border-left: 6px solid var(--saffron);
+  border-radius: var(--radius-md);
+  padding: 26px;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+}
+
+.acard:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+
+.acard h3 {
+  font-family: 'Tiro Devanagari Hindi', serif;
+  color: var(--red);
+  font-size: 1.15rem;
+  margin-bottom: 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.acard p, .acard li {
+  font-size: 0.93rem;
+  line-height: 1.85;
+  color: #3b4249;
+}
+
+.acard ul {
+  padding-left: 20px;
+}
+
+.acard li {
+  margin-bottom: 6px;
+  list-style: disc;
+}
+
+/* About Stats Row */
+.about-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-top: 36px;
+}
+
+.stat-box {
+  background: linear-gradient(135deg, var(--navy), var(--navy2));
+  color: #fff;
+  border-radius: var(--radius-md);
+  padding: 22px 18px;
+  text-align: center;
+  border-bottom: 4px solid var(--gold);
+  box-shadow: var(--shadow-md);
+  transition: var(--transition);
+}
+
+.stat-box:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+}
+
+.stat-num {
+  font-size: 2.1rem;
+  font-weight: 900;
+  color: var(--gold-light);
+  font-family: 'Playfair Display', serif;
+  line-height: 1.1;
+  margin-bottom: 6px;
+}
+
+.stat-label {
+  font-size: 0.84rem;
+  color: #c9d2db;
+  letter-spacing: 0.03em;
+}
+
+/* ════════════════════════════════════════════════════════════════════
+   OPTION 2: CAMPUS (विद्यालय परिसर)
+════════════════════════════════════════════════════════════════════ */
+#campus {
+  background: var(--navy);
+  color: #fff;
+}
+
+#campus .sec-title {
+  color: var(--gold-light);
+}
+
+#campus .sec-title::after {
+  background: var(--saffron);
+}
+
+#campus .sec-subtitle {
+  color: #aeb9c7;
+}
+
+.campus-hero-box {
+  max-width: 920px;
+  margin: 0 auto 36px;
+  border: 5px solid var(--gold);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: 0 16px 50px rgba(0, 0, 0, 0.7);
+  background: #000;
+}
+
+.campus-hero-box img {
+  width: 100%;
+  max-height: 480px;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.campus-hero-box:hover img {
+  transform: scale(1.03);
+}
+
+.campus-cap {
+  background: linear-gradient(90deg, var(--red-dark), var(--red), var(--red-dark));
+  color: var(--gold-light);
+  text-align: center;
+  padding: 16px 20px;
+  font-family: 'Tiro Devanagari Hindi', serif;
+  font-size: 1.05rem;
+  letter-spacing: 0.02em;
+  border-top: 2px solid var(--gold);
+}
+
+.campus-facilities-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+  margin-top: 36px;
+}
+
+.facility-card {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(212, 160, 23, 0.28);
+  border-radius: var(--radius-md);
+  padding: 24px;
+  backdrop-filter: blur(8px);
+  transition: var(--transition);
+}
+
+.facility-card:hover {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: var(--gold);
+  transform: translateY(-5px);
+}
+
+.facility-icon {
+  font-size: 2rem;
+  margin-bottom: 12px;
+}
+
+.facility-card h4 {
+  color: var(--gold-light);
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+  font-family: 'Tiro Devanagari Hindi', serif;
+}
+
+.facility-card p {
+  color: #c4d0dc;
+  font-size: 0.88rem;
+  line-height: 1.7;
+}
+
+/* ════════════════════════════════════════════════════════════════════
+   OPTION 3: PRINCIPAL (प्रधानाचार्य)
+════════════════════════════════════════════════════════════════════ */
+#principal {
+  background: var(--lb);
+}
+
+.principal-section-layout {
+  display: grid;
+  grid-template-columns: 400px 1fr;
+  gap: 36px;
+  align-items: start;
+}
+
+.pcard {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: 0 12px 38px rgba(139, 0, 0, 0.18);
+  border: 3px solid var(--gold);
+  text-align: center;
+  padding-bottom: 28px;
+}
+
+.pphoto-wrapper {
+  width: 100%;
+  height: 340px;
+  overflow: hidden;
+  background: #eee;
+  position: relative;
+}
+
+.pphoto {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.pcard:hover .pphoto {
+  transform: scale(1.04);
+}
+
+.pbody {
+  padding: 22px 24px 0;
+}
+
+.pname {
+  font-family: 'Tiro Devanagari Hindi', 'Playfair Display', serif;
+  font-size: 1.85rem;
+  color: var(--red);
+  margin-bottom: 2px;
+  font-weight: 700;
+}
+
+.prole {
+  font-size: 0.85rem;
+  color: var(--saffron);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 10px;
+}
+
+.pqual {
+  font-size: 0.9rem;
+  color: var(--gray-dark);
+  line-height: 1.75;
+  margin-bottom: 18px;
+  background: var(--cream-soft);
+  padding: 10px 14px;
+  border-radius: var(--radius-sm);
+  border: 1px dashed rgba(212, 160, 23, 0.5);
+}
+
+.pphone {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--red);
+  color: #fff;
+  padding: 10px 28px;
+  border-radius: var(--radius-pill);
+  font-size: 0.94rem;
+  font-weight: 700;
+  box-shadow: 0 4px 14px rgba(139, 0, 0, 0.35);
+  transition: var(--transition);
+}
+
+.pphone:hover {
+  background: var(--saffron);
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(255, 107, 0, 0.4);
+}
+
+.principal-message-box {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  padding: 34px 38px;
+  border-left: 6px solid var(--red);
+  box-shadow: var(--shadow-md);
+}
+
+.principal-message-box h3 {
+  font-family: 'Tiro Devanagari Hindi', serif;
+  color: var(--red);
+  font-size: 1.45rem;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.principal-message-box p {
+  color: #3b4249;
+  font-size: 0.95rem;
+  line-height: 1.85;
+  margin-bottom: 16px;
+}
+
+.principal-quote {
+  font-style: italic;
+  font-size: 1.05rem;
+  color: var(--red-dark);
+  border-left: 4px solid var(--gold);
+  padding: 12px 18px;
+  background: var(--cream-soft);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  margin: 20px 0;
+}
+
+/* ════════════════════════════════════════════════════════════════════
+   OPTION 4: TEACHERS (शिक्षक मण्डल)
+════════════════════════════════════════════════════════════════════ */
+#teachers {
+  background: var(--white);
+}
+
+/* Filter & Search Bar */
+.filter-controls {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 32px;
+  background: var(--cream-soft);
+  padding: 16px 20px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-light);
+}
+
+.filter-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.filter-btn {
+  background: var(--white);
+  border: 1px solid rgba(139, 0, 0, 0.2);
+  color: var(--navy);
+  padding: 8px 16px;
+  border-radius: var(--radius-pill);
+  font-size: 0.82rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+  background: var(--red);
+  color: #fff;
+  border-color: var(--red);
+}
+
+.search-box {
+  position: relative;
+  min-width: 260px;
+}
+
+.search-box input {
+  width: 100%;
+  padding: 9px 16px 9px 36px;
+  border: 1px solid rgba(139, 0, 0, 0.25);
+  border-radius: var(--radius-pill);
+  font-size: 0.88rem;
+  background: #fff;
+  transition: var(--transition);
+}
+
+.search-box input:focus {
+  border-color: var(--saffron);
+  box-shadow: 0 0 0 3px rgba(255, 107, 0, 0.15);
+}
+
+.search-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--gray-light);
+  font-size: 0.9rem;
+}
+
+.tcount-badge {
+  font-size: 0.85rem;
+  color: var(--red);
+  font-weight: 700;
+  margin-left: 8px;
+}
+
+.tgrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 24px;
+}
+
+.tcard {
+  background: var(--cream);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: 1px solid rgba(212, 160, 23, 0.35);
+  position: relative;
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.tcard::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--saffron), var(--gold));
+  z-index: 2;
+}
+
+.tcard:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 16px 36px rgba(139, 0, 0, 0.18);
+  border-color: var(--saffron);
+}
+
+.tpwrap {
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+  background: #e9ecef;
+  position: relative;
+}
+
+.tphoto {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.tcard:hover .tphoto {
+  transform: scale(1.05);
+}
+
+.tinfo {
+  padding: 16px 14px 18px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.tname {
+  font-family: 'Tiro Devanagari Hindi', 'Playfair Display', serif;
+  font-size: 1.18rem;
+  color: var(--red);
+  margin-bottom: 2px;
+  font-weight: 700;
+}
+
+.ten-sub {
+  font-family: 'Lato', sans-serif;
+  font-size: 0.82rem;
+  color: #7f8c8d;
+  margin-bottom: 8px;
+  letter-spacing: 0.02em;
+}
+
+.tsubj {
+  display: inline-block;
+  align-self: center;
+  background: var(--saffron);
+  color: #fff;
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 3px 12px;
+  border-radius: var(--radius-pill);
+  letter-spacing: 0.04em;
+  margin-bottom: 8px;
+}
+
+.tqual {
+  font-size: 0.76rem;
+  color: var(--gray-dark);
+  line-height: 1.55;
+  margin-bottom: 10px;
+  flex-grow: 1;
+}
+
+.tmob {
+  margin-top: auto;
+  padding-top: 8px;
+  border-top: 1px dashed rgba(212, 160, 23, 0.35);
+}
+
+.tmob a {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  color: var(--red);
+  font-size: 0.82rem;
+  font-weight: 700;
+  transition: var(--transition);
+}
+
+.tmob a:hover {
+  color: var(--saffron);
+  transform: scale(1.05);
+}
+
+/* ════════════════════════════════════════════════════════════════════
+   OPTION 5: STAFF (सहायक कर्मचारी)
+════════════════════════════════════════════════════════════════════ */
+#staff {
+  background: var(--lb);
+}
+
+.sgrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 24px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.scard {
+  background: var(--white);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: 1px solid rgba(139, 0, 0, 0.18);
+  position: relative;
+  text-align: center;
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.scard::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--red), var(--gold));
+  z-index: 2;
+}
+
+.scard:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 32px rgba(139, 0, 0, 0.16);
+}
+
+.spwrap {
+  width: 100%;
+  height: 210px;
+  overflow: hidden;
+  background: #eee;
+  position: relative;
+}
+
+.sphoto {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.scard:hover .sphoto {
+  transform: scale(1.05);
+}
+
+.sinfo {
+  padding: 16px 14px 18px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.sname {
+  font-family: 'Tiro Devanagari Hindi', 'Playfair Display', serif;
+  font-size: 1.18rem;
+  color: var(--red);
+  margin-bottom: 2px;
+  font-weight: 700;
+}
+
+.srole {
+  display: inline-block;
+  align-self: center;
+  background: var(--red);
+  color: #fff;
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 3px 12px;
+  border-radius: var(--radius-pill);
+  letter-spacing: 0.04em;
+  margin-bottom: 8px;
+}
+
+.squal {
+  font-size: 0.78rem;
+  color: var(--gray-dark);
+  margin-bottom: 8px;
+  flex-grow: 1;
+}
+
+.smob {
+  margin-top: auto;
+  padding-top: 6px;
+  border-top: 1px dashed rgba(139, 0, 0, 0.2);
+}
+
+.smob a {
+  color: var(--red);
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+.smob a:hover {
+  color: var(--saffron);
+}
+
+/* ════════════════════════════════════════════════════════════════════
+   OPTION 6: CONTACT (संपर्क सूत्र)
+════════════════════════════════════════════════════════════════════ */
+#contact {
+  background: var(--navy);
+  color: #fff;
+}
+
+#contact .sec-title {
+  color: var(--gold-light);
+}
+
+#contact .sec-title::after {
+  background: var(--saffron);
+}
+
+#contact .sec-subtitle {
+  color: #aeb9c7;
+}
+
+.contact-layout {
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  gap: 36px;
+  align-items: start;
+}
+
+.cgrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+.citem {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(212, 160, 23, 0.28);
+  border-radius: var(--radius-md);
+  padding: 22px 18px;
+  backdrop-filter: blur(8px);
+  transition: var(--transition);
+}
+
+.citem:hover {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: var(--gold);
+  transform: translateY(-3px);
+}
+
+.citem .ci {
+  font-size: 1.8rem;
+  margin-bottom: 8px;
+}
+
+.citem h4 {
+  color: var(--gold-light);
+  font-size: 0.98rem;
+  margin-bottom: 8px;
+  font-family: 'Tiro Devanagari Hindi', serif;
+}
+
+.citem p {
+  color: #c4d0dc;
+  font-size: 0.88rem;
+  line-height: 1.7;
+}
+
+.citem a {
+  color: var(--gold-light);
+  font-weight: 700;
+}
+
+.citem a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.udise {
+  font-family: monospace;
+  font-size: 1.1rem !important;
+  color: var(--gold-light) !important;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+/* Contact Form Box */
+.contact-form-box {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(212, 160, 23, 0.35);
+  border-radius: var(--radius-lg);
+  padding: 30px;
+  backdrop-filter: blur(10px);
+}
+
+.contact-form-box h3 {
+  font-family: 'Tiro Devanagari Hindi', serif;
+  color: var(--gold-light);
+  font-size: 1.35rem;
+  margin-bottom: 8px;
+}
+
+.contact-form-box p {
+  color: #c4d0dc;
+  font-size: 0.88rem;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 16px;
+}
+
+.form-group label {
+  display: block;
+  color: var(--gold-light);
+  font-size: 0.84rem;
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 11px 14px;
+  border-radius: var(--radius-sm);
+  border: 1px solid rgba(212, 160, 23, 0.3);
+  background: rgba(10, 22, 40, 0.65);
+  color: #fff;
+  font-size: 0.9rem;
+  transition: var(--transition);
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: var(--gold);
+  background: rgba(10, 22, 40, 0.9);
+  box-shadow: 0 0 0 3px rgba(212, 160, 23, 0.2);
+}
+
+.form-submit-btn {
+  background: linear-gradient(90deg, var(--saffron), var(--gold));
+  color: var(--navy);
+  border: none;
+  padding: 13px 32px;
+  border-radius: var(--radius-pill);
+  font-size: 0.96rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: var(--transition);
+  box-shadow: 0 6px 18px rgba(255, 107, 0, 0.35);
+  width: 100%;
+}
+
+.form-submit-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(212, 160, 23, 0.45);
+}
+
+/* ════════════════════════════════════════════════════════════════════
+   OPTION 7: eBOOKS (ई-पुस्तकालय / Digital Textbooks)
+════════════════════════════════════════════════════════════════════ */
+#ebooks {
+  background: var(--white);
+}
+
+.ebooks-header-banner {
+  background: linear-gradient(135deg, var(--cream-soft), var(--lb));
+  border: 2px dashed rgba(212, 160, 23, 0.5);
+  border-radius: var(--radius-lg);
+  padding: 24px 28px;
+  margin-bottom: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.ebooks-header-text h3 {
+  font-family: 'Tiro Devanagari Hindi', serif;
+  color: var(--red);
+  font-size: 1.3rem;
+  margin-bottom: 4px;
+}
+
+.ebooks-header-text p {
+  color: var(--gray);
+  font-size: 0.92rem;
+}
+
+.ebooks-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+  gap: 24px;
+}
+
+.ebook-card {
+  background: var(--cream);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  padding: 20px;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+
+.ebook-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 5px;
+  height: 100%;
+  background: var(--saffron);
+}
+
+.ebook-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--gold);
+}
+
+.ebook-top {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  margin-bottom: 14px;
+}
+
+.ebook-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radius-sm);
+  background: linear-gradient(135deg, var(--red), var(--saffron));
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  flex-shrink: 0;
+  box-shadow: 0 4px 10px rgba(139, 0, 0, 0.2);
+}
+
+.ebook-meta {
+  flex-grow: 1;
+}
+
+.ebook-class-badge {
+  display: inline-block;
+  background: rgba(139, 0, 0, 0.1);
+  color: var(--red);
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 4px;
+  margin-bottom: 4px;
+}
+
+.ebook-stream-badge {
+  display: inline-block;
+  background: rgba(255, 107, 0, 0.12);
+  color: var(--saffron);
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 4px;
+  margin-bottom: 4px;
+  margin-left: 4px;
+}
+
+.ebook-title {
+  font-family: 'Tiro Devanagari Hindi', serif;
+  font-size: 1.05rem;
+  color: var(--navy);
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.ebook-desc {
+  font-size: 0.82rem;
+  color: var(--gray);
+  line-height: 1.6;
+  margin-bottom: 16px;
+  flex-grow: 1;
+}
+
+.ebook-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: auto;
+}
+
+.ebook-btn-read {
+  flex: 1;
+  background: var(--red);
+  color: #fff;
+  border: none;
+  padding: 9px 12px;
+  border-radius: var(--radius-pill);
+  font-size: 0.82rem;
+  font-weight: 700;
+  text-align: center;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.ebook-btn-read:hover {
+  background: var(--saffron);
+  color: #fff;
+}
+
+.ebook-btn-dl {
+  flex: 1;
+  background: var(--lb);
+  color: var(--red);
+  border: 1px solid rgba(139, 0, 0, 0.3);
+  padding: 9px 12px;
+  border-radius: var(--radius-pill);
+  font-size: 0.82rem;
+  font-weight: 700;
+  text-align: center;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.ebook-btn-dl:hover {
+  background: var(--red);
+  color: #fff;
+}
+
+/* ════════════════════════════════════════════════════════════════════
+   OPTION 8: CLASSROOM GALLERY (कक्षा व गतिविधि गैलरी)
+════════════════════════════════════════════════════════════════════ */
+#gallery {
+  background: var(--cream-soft);
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.gallery-card {
+  background: var(--white);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: 1px solid rgba(212, 160, 23, 0.3);
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.gallery-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.15);
+  border-color: var(--gold);
+}
+
+.gallery-img-wrapper {
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+  position: relative;
+  background: #222;
+}
+
+.gallery-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.gallery-card:hover .gallery-img {
+  transform: scale(1.08);
+}
+
+.gallery-tag {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: rgba(10, 22, 40, 0.85);
+  color: var(--gold-light);
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: var(--radius-pill);
+  backdrop-filter: blur(4px);
+  border: 1px solid rgba(212, 160, 23, 0.4);
+}
+
+.gallery-zoom-icon {
+  position: absolute;
+  inset: 0;
+  background: rgba(139, 0, 0, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 2rem;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.gallery-card:hover .gallery-zoom-icon {
+  opacity: 1;
+}
+
+.gallery-caption {
+  padding: 16px 18px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.gallery-title {
+  font-family: 'Tiro Devanagari Hindi', serif;
+  font-size: 1.05rem;
+  color: var(--red);
+  margin-bottom: 6px;
+  font-weight: 700;
+}
+
+.gallery-desc {
+  font-size: 0.82rem;
+  color: var(--gray);
+  line-height: 1.6;
+}
+
+/* ── LIGHTBOX MODAL ── */
+.lightbox-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(5, 12, 22, 0.95);
+  z-index: 2000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  padding: 20px;
+}
+
+.lightbox-modal.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.lightbox-content {
+  max-width: 950px;
+  width: 100%;
+  position: relative;
+  text-align: center;
+}
+
+.lightbox-img-box {
+  max-height: 75vh;
+  overflow: hidden;
+  border-radius: var(--radius-md);
+  border: 3px solid var(--gold);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.8);
+  margin-bottom: 16px;
+  background: #000;
+}
+
+.lightbox-img {
+  width: 100%;
+  max-height: 75vh;
+  object-fit: contain;
+}
+
+.lightbox-caption {
+  color: #fff;
+  font-family: 'Tiro Devanagari Hindi', serif;
+  font-size: 1.15rem;
+}
+
+.lightbox-sub {
+  color: var(--gold-light);
+  font-size: 0.9rem;
+  margin-top: 4px;
+}
+
+.lightbox-close {
+  position: absolute;
+  top: -46px;
+  right: 0;
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.lightbox-close:hover {
+  color: var(--saffron);
+}
+
+.lightbox-nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(212, 160, 23, 0.25);
+  border: 1px solid var(--gold);
+  color: #fff;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.lightbox-nav-btn:hover {
+  background: var(--gold);
+  color: var(--navy);
+}
+
+.lightbox-prev {
+  left: -65px;
+}
+
+.lightbox-next {
+  right: -65px;
+}
+
+/* ── eBOOK PREVIEW MODAL ── */
+.ebook-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(10, 22, 40, 0.85);
+  z-index: 2000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  padding: 20px;
+}
+
+.ebook-modal.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.ebook-modal-content {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  max-width: 650px;
+  width: 100%;
+  max-height: 85vh;
+  overflow-y: auto;
+  padding: 30px;
+  position: relative;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+  border: 2px solid var(--gold);
+}
+
+.ebook-modal-close {
+  position: absolute;
+  top: 18px;
+  right: 20px;
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  color: var(--gray);
+  cursor: pointer;
+}
+
+.ebook-modal-close:hover {
+  color: var(--red);
+}
+
+/* ── FOOTER ── */
+footer {
+  background: linear-gradient(135deg, #070f1c, var(--navy), #0a172a);
+  color: #c9d4e0;
+  text-align: center;
+  padding: 46px 20px 28px;
+  border-top: 4px solid var(--gold);
+}
+
+.footer-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.footer-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 18px;
+  margin-bottom: 24px;
+}
+
+.footer-nav a {
+  color: var(--gold-light);
+  font-size: 0.84rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.footer-nav a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+footer p {
+  font-size: 0.92rem;
+  line-height: 1.8;
+  margin-bottom: 12px;
+}
+
+footer strong {
+  color: var(--gold-light);
+  font-size: 1.05rem;
+}
+
+.fsub {
+  font-size: 0.82rem;
+  color: #8b99a9;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding-top: 16px;
+  margin-top: 16px;
+}
+
+/* ════════════════════════════════════════════════════════════════════
+   TELEGRAM LIVE CHAT WIDGET
+════════════════════════════════════════════════════════════════════ */
+#tgw {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 10000;
+  font-family: 'Lato', sans-serif;
+}
+
+#tg-btn {
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #0088cc, #006699);
+  border: 3px solid #fff;
+  box-shadow: 0 8px 24px rgba(0, 136, 204, 0.45);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+#tg-btn:hover {
+  transform: scale(1.08);
+  box-shadow: 0 10px 30px rgba(0, 136, 204, 0.6);
+}
+
+#tg-notif {
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  background: var(--red);
+  color: #fff;
+  font-size: 0.72rem;
+  font-weight: 700;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #fff;
+}
+
+.tg-hidden {
+  display: none !important;
+}
+
+#tg-panel {
+  position: absolute;
+  bottom: 70px;
+  right: 0;
+  width: 340px;
+  max-width: 90vw;
+  height: 480px;
+  max-height: 80vh;
+  background: #ffffff;
+  border-radius: var(--radius-md);
+  box-shadow: 0 14px 44px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border: 1px solid rgba(0, 136, 204, 0.3);
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s ease;
+  transform-origin: bottom right;
+}
+
+#tg-panel.tg-closed {
+  transform: scale(0.7);
+  opacity: 0;
+  pointer-events: none;
+}
+
+#tg-head {
+  background: linear-gradient(135deg, #0088cc, #006699);
+  color: #fff;
+  padding: 14px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#tg-head-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#tg-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#tg-agent-name {
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+
+#tg-status-line {
+  font-size: 0.75rem;
+  opacity: 0.9;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.tg-online-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #2ecc71;
+  display: inline-block;
+}
+
+.tg-close-x {
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 1.2rem;
+  cursor: pointer;
+  opacity: 0.85;
+}
+
+.tg-close-x:hover {
+  opacity: 1;
+}
+
+#tg-msgs {
+  flex-grow: 1;
+  padding: 14px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: #f7f9fb;
+}
+
+.tg-msg {
+  max-width: 80%;
+  padding: 9px 13px;
+  border-radius: 12px;
+  font-size: 0.88rem;
+  line-height: 1.45;
+}
+
+.tg-msg-in {
+  background: #fff;
+  color: #333;
+  align-self: flex-start;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+  border-bottom-left-radius: 2px;
+}
+
+.tg-msg-out {
+  background: #0088cc;
+  color: #fff;
+  align-self: flex-end;
+  box-shadow: 0 2px 6px rgba(0, 136, 204, 0.2);
+  border-bottom-right-radius: 2px;
+}
+
+.tg-msg-time {
+  font-size: 0.68rem;
+  opacity: 0.7;
+  margin-top: 3px;
+  text-align: right;
+}
+
+#tg-typing {
+  padding: 4px 14px;
+}
+
+.tg-typing-bub {
+  display: inline-flex;
+  gap: 4px;
+  background: #e4e7eb;
+  padding: 6px 10px;
+  border-radius: 12px;
+}
+
+.tg-typing-bub span {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #777;
+  animation: typingBounce 1s infinite alternate;
+}
+
+.tg-typing-bub span:nth-child(2) { animation-delay: 0.2s; }
+.tg-typing-bub span:nth-child(3) { animation-delay: 0.4s; }
+
+@keyframes typingBounce {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-4px); }
+}
+
+#tg-quick {
+  padding: 8px 12px;
+  display: flex;
+  gap: 6px;
+  overflow-x: auto;
+  background: #fff;
+  border-top: 1px solid #edf1f5;
+}
+
+#tg-quick::-webkit-scrollbar {
+  height: 3px;
+}
+
+.tg-qbtn {
+  background: #f0f4f8;
+  border: 1px solid #d9e2ec;
+  color: #102a43;
+  padding: 5px 10px;
+  border-radius: 14px;
+  font-size: 0.74rem;
+  font-weight: 600;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.tg-qbtn:hover {
+  background: #0088cc;
+  color: #fff;
+  border-color: #0088cc;
+}
+
+#tg-footer {
+  padding: 10px 12px;
+  background: #fff;
+  border-top: 1px solid #edf1f5;
+  display: flex;
+  gap: 8px;
+}
+
+#tg-inp {
+  flex-grow: 1;
+  padding: 8px 12px;
+  border: 1px solid #d9e2ec;
+  border-radius: 20px;
+  font-size: 0.86rem;
+  outline: none;
+}
+
+#tg-inp:focus {
+  border-color: #0088cc;
+}
+
+#tg-send-btn {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #0088cc;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #fff;
+  flex-shrink: 0;
+  transition: background 0.2s;
+}
+
+/* ── EMPTY GALLERY STATE ── */
+.gallery-empty-state {
+  text-align: center;
+  padding: 64px 28px;
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  border: 2px dashed rgba(212, 160, 23, 0.45);
+  max-width: 620px;
+  margin: 20px auto;
+  box-shadow: var(--shadow-sm);
+}
+
+.gallery-empty-state .empty-icon {
+  font-size: 3.8rem;
+  margin-bottom: 16px;
+  opacity: 0.85;
+}
+
+.gallery-empty-state h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem;
+  color: var(--navy);
+  margin-bottom: 10px;
+}
+
+.gallery-empty-state p {
+  color: var(--gray);
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+/* ════════════════════════════════════════════════════════════════════
+   RESPONSIVE DESIGN (DESKTOPS, TABLETS, PHONES & iPhones)
+════════════════════════════════════════════════════════════════════ */
+
+/* ── 1. TABLET LANDSCAPE & SMALL LAPTOPS (max-width: 1024px) ── */
+@media (max-width: 1024px) {
+  section {
+    padding: 56px 18px;
+  }
+  .nav-item {
+    padding: 12px 13px;
+    font-size: 0.8rem;
+  }
+  .principal-section-layout {
+    grid-template-columns: 360px 1fr;
+    gap: 28px;
+  }
+}
+
+/* ── 2. TABLET PORTRAIT & MEDIUM SCREENS (max-width: 960px) ── */
+@media (max-width: 960px) {
+  .nav-brand-mobile {
+    display: block;
+  }
+  .nav-container {
+    flex-wrap: wrap;
+    padding: 8px 16px;
+    min-height: 54px;
+  }
+  .nav-toggle-btn {
+    display: inline-flex;
+    margin-left: auto;
+  }
+  .nav-links {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    padding: 8px 0 12px;
+    border-top: 1px solid rgba(255, 255, 255, 0.18);
+    background: var(--red-dark);
+    border-radius: 0 0 var(--radius-sm) var(--radius-sm);
+  }
+  .nav-links.open {
+    display: flex;
+  }
+  .nav-item {
+    width: 100%;
+    text-align: left;
+    padding: 13px 18px;
+    min-height: 48px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    justify-content: flex-start;
+  }
+  .nav-item::after {
+    display: none;
+  }
+  .agrid {
+    grid-template-columns: 1fr;
+  }
+  .about-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .principal-section-layout {
+    grid-template-columns: 1fr;
+  }
+  .pcard {
+    max-width: 440px;
+    margin: 0 auto;
+  }
+  .contact-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ── 3. SMARTPHONES & SMALL TABLETS (max-width: 768px) ── */
+@media (max-width: 768px) {
+  section {
+    padding: 44px 14px;
+  }
+  .sec-title {
+    font-size: clamp(1.4rem, 5vw, 1.95rem);
+    margin-bottom: 24px;
+  }
+  .sec-subtitle {
+    font-size: 0.9rem;
+    margin: -16px auto 28px;
+  }
+  .topbar {
+    text-align: center;
+    padding: 7px 10px;
+  }
+  .topbar-container {
+    justify-content: center;
+    gap: 8px;
+  }
+  .topbar-right {
+    margin-top: 2px;
+  }
+  .cgrid {
+    grid-template-columns: 1fr;
+  }
+  .filter-controls {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+    padding: 14px;
+  }
+  .search-box {
+    width: 100%;
+    min-width: 0;
+  }
+  .ebooks-grid {
+    grid-template-columns: 1fr;
+  }
+  .lightbox-nav-btn {
+    display: none;
+  }
+  .ebook-modal-content {
+    width: calc(100% - 24px);
+    margin: 12px;
+    max-height: 90vh;
+  }
+  /* Prevent iOS Safari automatic zoom on inputs */
+  input, select, textarea {
+    font-size: 16px !important;
+  }
+}
+
+/* ── 4. MOBILE PHONES & iPhones (max-width: 600px) ── */
+@media (max-width: 600px) {
+  .topbar {
+    padding: 6px 8px;
+    font-size: 0.75rem;
+  }
+  .topbar-container {
+    flex-direction: column;
+    gap: 6px;
+  }
+  .topbar-left, .topbar-right {
+    justify-content: center;
+    gap: 6px;
+    flex-wrap: wrap;
+  }
+  .topbar-sep {
+    display: none;
+  }
+  .topbar-item {
+    background: rgba(255, 255, 255, 0.08);
+    padding: 3px 8px;
+    border-radius: 12px;
+    font-size: 0.74rem;
+  }
+  .lang-toggle-btn {
+    padding: 4px 10px;
+    min-height: 32px;
+  }
+  .hlogo-wrapper {
+    width: 92px;
+    height: 92px;
+    margin-bottom: 12px;
+  }
+  .hname {
+    font-size: clamp(1.35rem, 6.2vw, 1.8rem);
+  }
+  .hname-en {
+    font-size: 0.92rem;
+  }
+  .hsub {
+    font-size: 0.8rem;
+  }
+  .hbadges {
+    gap: 6px;
+    margin-top: 14px;
+  }
+  .hbadge {
+    font-size: 0.72rem;
+    padding: 4px 10px;
+  }
+  .hero {
+    padding: 12px 14px;
+    font-size: clamp(0.92rem, 3.6vw, 1.12rem);
+    line-height: 1.45;
+    word-break: break-word;
+    overflow-wrap: break-word;
+  }
+  .about-stats {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  .stat-box {
+    padding: 16px 10px;
+  }
+  .stat-num {
+    font-size: 1.8rem;
+  }
+  .stat-label {
+    font-size: 0.78rem;
+  }
+  .pphoto-wrapper {
+    height: 280px;
+  }
+  .pbody {
+    padding: 18px 16px 0;
+  }
+  .pname {
+    font-size: 1.35rem;
+  }
+  .pphone {
+    padding: 12px 16px;
+    font-size: 0.92rem;
+    min-height: 44px;
+  }
+  .principal-message-box {
+    padding: 22px 18px;
+  }
+  .tgrid {
+    grid-template-columns: 1fr;
+    max-width: 360px;
+    margin: 0 auto;
+    gap: 18px;
+  }
+  .sgrid {
+    grid-template-columns: 1fr;
+    max-width: 360px;
+    margin: 0 auto;
+    gap: 18px;
+  }
+  .contact-form-card {
+    padding: 22px 16px;
+  }
+  .btn-submit {
+    min-height: 48px;
+    font-size: 1rem;
+  }
+  .ebooks-header-banner {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 18px 16px;
+    gap: 14px;
+  }
+  .ebook-actions {
+    flex-direction: column;
+    gap: 8px;
+  }
+  .ebook-btn-read, .ebook-btn-dl {
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+  /* Telegram Chat Widget on Mobile/iPhone */
+  #tgw {
+    bottom: calc(16px + env(safe-area-inset-bottom, 0px));
+    right: 16px;
+  }
+  #tg-btn {
+    width: 52px;
+    height: 52px;
+  }
+  #tg-panel {
+    width: calc(100vw - 32px);
+    max-height: calc(100vh - 110px);
+    right: 0;
+    bottom: 64px;
+  }
+  #tg-input {
+    font-size: 16px;
+  }
+  footer {
+    padding-bottom: max(24px, env(safe-area-inset-bottom, 24px));
+  }
+}
+
+/* ── 5. NARROW PHONES (max-width: 380px) ── */
+@media (max-width: 380px) {
+  .about-stats {
+    grid-template-columns: 1fr;
+  }
+  .hname {
+    font-size: 1.25rem;
+  }
+  .filter-tabs {
+    justify-content: center;
+  }
+  .filter-btn {
+    flex: 1 1 100%;
+    text-align: center;
+  }
+}

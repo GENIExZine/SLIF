@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#8B0000">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="format-detection" content="telephone=no">
+  <title>Teaching Faculty Directory | P.M. Shri +2 High School, Barbigha</title>
+  <meta name="description" content="Complete list of 25 qualified teachers appointed by BPSC TRE and Education Department at P.M. Shri +2 High School Barbigha with qualifications and contact info.">
+  <meta name="keywords" content="P.M. Shri +2 High School Barbigha, Barbigha High School, Sheikhpura School, Ramdhari Singh Dinkar Smriti Manch, PM SHRI School Bihar, BSEB Patna">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="images/school-logo.png">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Tiro+Devanagari+Hindi:ital@0;1&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- TOP BAR -->
+  <div class="topbar">
+    <div class="topbar-container">
+      <div class="topbar-left" id="topbarLeft">
+        <span class="topbar-item" id="tbEst">🏛️ स्थापित: 3 जनवरी 1933</span>
+        <span class="topbar-sep">|</span>
+        <span class="topbar-item" id="tbApp">📜 प्रस्वीकृति: जनवरी 1937</span>
+        <span class="topbar-sep">|</span>
+        <span class="topbar-item" id="tbUpg">🎓 +2 उत्क्रमण: 2010</span>
+        <span class="topbar-sep">|</span>
+        <span class="topbar-item" id="tbUdise">📋 UDISE Code: 10262907004</span>
+      </div>
+      <div class="topbar-right">
+        <button class="lang-toggle-btn" onclick="toggleLanguage()" id="langSwitchBtn" aria-label="Toggle Language Hindi / English">
+          🌐 <span id="langSwitchLabel">हिन्दी (Hindi)</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <header>
+    <div class="header-container">
+      <div class="hlogo-wrapper">
+        <a href="index.html" class="hlogo" title="P.M. Shri +2 High School Barbigha - Home">
+          <img src="images/school-logo.png" alt="Founder Headmaster Rashtrakavi Ramdhari Singh Dinkar Statue">
+        </a>
+      </div>
+      <h1 class="hname" id="hdrTitle">P.M. Shri +2 High School</h1>
+      <div class="hname-en" id="hdrSub">Barbigha, District Sheikhpura (Bihar)</div>
+      <div class="hsub" id="hdrPin">P.O. and P.S. Barbigha, PIN: 811101 — Affiliated to BSEB Patna</div>
+      <div class="hbadges">
+        <span class="hbadge" id="hbPin">📌 PIN: 811101</span>
+        <span class="hbadge" id="hbEst">🏛️ Est. 1933 (90+ Years)</span>
+        <span class="hbadge" id="hbPm">🏅 PM-SHRI Exemplary School</span>
+        <span class="hbadge" id="hbBseb">🎓 Bihar School Examination Board</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- 8 OPTIONS NAVIGATION -->
+  <nav id="mainNav">
+    <div class="nav-container">
+      <span class="nav-brand-mobile">🏫 Barbigha High School</span>
+      <button class="nav-toggle-btn" id="navToggle" aria-label="Toggle Navigation Menu">
+        <span>☰</span> <span>Menu</span>
+      </button>
+      <div class="nav-links" id="navLinks">
+        <a class="nav-item " href="index.html">Home</a>
+        <a class="nav-item " href="about.html">About</a>
+        <a class="nav-item " href="campus.html">Campus</a>
+        <a class="nav-item " href="principal.html">Principal</a>
+        <a class="nav-item active" href="teachers.html">Teachers</a>
+        <a class="nav-item " href="staff.html">Staff</a>
+        <a class="nav-item " href="contact.html">Contact</a>
+        <a class="nav-item " href="ebooks.html">eBooks</a>
+        <a class="nav-item " href="gallery.html">Classroom Gallery</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO MOTTO STRIP -->
+  <div class="hero" id="heroMotto">
+    "ज्ञान ही शक्ति है — Knowledge is Power"
+  </div>
+
+  <!-- BREADCRUMB -->
+  <div class="breadcrumb-wrap">
+    <div class="breadcrumb-container">
+      <a href="index.html">🏠 Home</a>
+      <span class="breadcrumb-sep">/</span>
+      <span class="breadcrumb-current">Teaching Faculty</span>
+    </div>
+  </div>
+
+  <section id="teachers">
+    <div class="section-container">
+      <h2 class="sec-title" id="secTitleTeachers">Our Teaching Faculty <span id="secSubTeachers">Dedicated Educators and Mentors</span></h2>
+      <p class="sec-subtitle" id="secDescTeachers">Meet our team of 19 qualified and compassionate teachers appointed by Bihar Public Service Commission (BPSC TRE) and Secondary Education Department.</p>
+
+      <!-- Teacher Filters & Search -->
+      <div class="filter-controls rv">
+        <div class="filter-tabs">
+          <button class="filter-btn t-filter-btn active" data-filter="all">All Teachers <span class="badge" id="teacherCountBadge">(19)</span></button>
+          <button class="filter-btn t-filter-btn" data-filter="science">Science and Maths</button>
+          <button class="filter-btn t-filter-btn" data-filter="social">Social Sciences</button>
+          <button class="filter-btn t-filter-btn" data-filter="languages">Languages</button>
+          <button class="filter-btn t-filter-btn" data-filter="commerce_comp">Computer and Commerce</button>
+          <button class="filter-btn t-filter-btn" data-filter="arts">Arts and Music</button>
+          <button class="filter-btn t-filter-btn" data-filter="library">Library</button>
+        </div>
+        <div class="search-box">
+          <input type="text" id="teacherSearch" placeholder="🔍 Search teacher by name or subject..." aria-label="Search teachers">
+        </div>
+      </div>
+
+      <!-- Teachers Grid -->
+      <div class="tgrid" id="teachersGrid">
+        
+  <div class="tcard rv" data-category="languages" data-name="gopal ji sanskrit">
+    <div class="tcard-img-wrap">
+      <img src="images/teachers/gopal-ji.jpg" alt="Gopal Ji - Sanskrit Teacher" class="tcard-img" loading="lazy"
+           onerror="this.onerror=null; this.src='images/teacher-placeholder.svg'">
+      <div class="tcard-num">#01</div>
+    </div>
+    <div class="tcard-body">
+      <h3 class="tcard-name">Gopal Ji</h3>
+      <div class="tcard-hi-name">गोपाल जी</div>
+      <div class="tcard-subj">Sanskrit</div>
+      <div class="tcard-qual">Acharya (Sangit Jyotish)<br>M.A. (Maths, Sanskrit, Education, Sociology), B.Ed.<br>Secondary Sanskrit Teacher</div>
+      
+      <div class="tcard-contact">
+        <a href="tel:9771675729" class="tcontact-link tphone" title="Call Gopal Ji">📞 9771675729</a>
+        <a href="https://wa.me/919771675729" target="_blank" rel="noopener" class="tcontact-link twhatsapp" title="WhatsApp Gopal Ji">💬 WhatsApp</a>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="tcard rv" data-category="science" data-name="kumari akeshwari botany">
+    <div class="tcard-img-wrap">
+      <img src="images/teachers/kumari-akeshwari.jpg" alt="Kumari Akeshwari - Botany Teacher" class="tcard-img" loading="lazy"
+           onerror="this.onerror=null; this.src='images/teacher-placeholder.svg'">
+      <div class="tcard-num">#02</div>
+    </div>
+    <div class="tcard-body">
+      <h3 class="tcard-name">Kumari Akeshwari</h3>
+      <div class="tcard-hi-name">कुमारी आकेश्वरी</div>
+      <div class="tcard-subj">Botany</div>
+      <div class="tcard-qual">M.Sc. (Botany), B.Ed. (11–12)<br>Higher Secondary Teacher TRE-01</div>
+      
+      <div class="tcard-contact">
+        <a href="tel:8839105463" class="tcontact-link tphone" title="Call Kumari Akeshwari">📞 8839105463</a>
+        <a href="https://wa.me/918839105463" target="_blank" rel="noopener" class="tcontact-link twhatsapp" title="WhatsApp Kumari Akeshwari">💬 WhatsApp</a>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="tcard rv" data-category="social" data-name="mukesh kumar assistant teacher">
+    <div class="tcard-img-wrap">
+      <img src="images/teachers/mukesh-kumar.jpg" alt="Mukesh Kumar - Assistant Teacher Teacher" class="tcard-img" loading="lazy"
+           onerror="this.onerror=null; this.src='images/teacher-placeholder.svg'">
+      <div class="tcard-num">#03</div>
+    </div>
+    <div class="tcard-body">
+      <h3 class="tcard-name">Mukesh Kumar</h3>
+      <div class="tcard-hi-name">मुकेश कुमार</div>
+      <div class="tcard-subj">Assistant Teacher</div>
+      <div class="tcard-qual">B.A. — Assistant Teacher<br>Secondary Department</div>
+      
+      <div class="tcard-contact">
+        <a href="tel:9430807804" class="tcontact-link tphone" title="Call Mukesh Kumar">📞 9430807804</a>
+        <a href="https://wa.me/919430807804" target="_blank" rel="noopener" class="tcontact-link twhatsapp" title="WhatsApp Mukesh Kumar">💬 WhatsApp</a>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="tcard rv" data-category="science" data-name="ruchi kumari mathematics">
+    <div class="tcard-img-wrap">
+      <img src="images/teachers/ruchi-kumari.jpg" alt="Ruchi Kumari - Mathematics Teacher" class="tcard-img" loading="lazy"
+           onerror="this.onerror=null; this.src='images/teacher-placeholder.svg'">
+      <div class="tcard-num">#04</div>
+    </div>
+    <div class="tcard-body">
+      <h3 class="tcard-name">Ruchi Kumari</h3>
+      <div class="tcard-hi-name">रूची कुमारी</div>
+      <div class="tcard-subj">Mathematics</div>
+      <div class="tcard-qual">B.Sc. Maths (Hons), B.Ed.<br>M.A. Geography (Hons) — BPSC TRE-1 (9–10)</div>
+      
+      <div class="tcard-contact">
+        <a href="tel:8340726900" class="tcontact-link tphone" title="Call Ruchi Kumari">📞 8340726900</a>
+        <a href="https://wa.me/918340726900" target="_blank" rel="noopener" class="tcontact-link twhatsapp" title="WhatsApp Ruchi Kumari">💬 WhatsApp</a>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="tcard rv" data-category="science" data-name="soni kumari zoology">
+    <div class="tcard-img-wrap">
+      <img src="images/teachers/soni-kumari.jpg" alt="Soni Kumari - Zoology Teacher" class="tcard-img" loading="lazy"
+           onerror="this.onerror=null; this.src='images/teacher-placeholder.svg'">
+      <div class="tcard-num">#05</div>
+    </div>
+    <div class="tcard-body">
+      <h3 class="tcard-name">Soni Kumari</h3>
+      <div class="tcard-hi-name">सोनी कुमारी</div>
+      <div class="tcard-subj">Zoology</div>
+      <div class="tcard-qual">B.Sc. (Zoology), M.Ed.<br>Secondary Science Teacher (9–10)</div>
+      
+      <div class="tcard-contact">
+        <a href="tel:8400128135" class="tcontact-link tphone" title="Call Soni Kumari">📞 8400128135</a>
+        <a href="https://wa.me/918400128135" target="_blank" rel="noopener" class="tcontact-link twhatsapp" title="WhatsApp Soni Kumari">💬 WhatsApp</a>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="tcard rv" data-category="languages" data-name="pratibha kumari hindi">
+    <div class="tcard-img-wrap">
+      <img src="images/teachers/pratibha-kumari.jpg" alt="Pratibha Kumari - Hindi Teacher" class="tcard-img" loading="lazy"
+           onerror="this.onerror=null; this.src='images/teacher-placeholder.svg'">
+      <div class="tcard-num">#06</div>
+    </div>
+    <div class="tcard-body">
+      <h3 class="tcard-name">Pratibha Kumari</h3>
+      <div class="tcard-hi-name">प्रतिभा कुमारी</div>
+      <div class="tcard-subj">Hindi</div>
+      <div class="tcard-qual">B.A. Hindi, B.Ed.<br>Secondary Hindi Teacher (9–10)</div>
+      
+      <div class="tcard-contact">
+        <a href="tel:9262277054" class="tcontact-link tphone" title="Call Pratibha Kumari">📞 9262277054</a>
+        <a href="https://wa.me/919262277054" target="_blank" rel="noopener" class="tcontact-link twhatsapp" title="WhatsApp Pratibha Kumari">💬 WhatsApp</a>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="tcard rv" data-category="science" data-name="pooja kumari mathematics (+2)">
+    <div class="tcard-img-wrap">
+      <img src="images/teachers/pooja-kumari.jpg" alt="Pooja Kumari - Mathematics (+2) Teacher" class="tcard-img" loading="lazy"
+           onerror="this.onerror=null; this.src='images/teacher-placeholder.svg'">
+      <div class="tcard-num">#07</div>
+    </div>
+    <div class="tcard-body">
+      <h3 class="tcard-name">Pooja Kumari</h3>
+      <div class="tcard-hi-name">पूजा कुमारी</div>
+      <div class="tcard-subj">Mathematics (+2)</div>
+      <div class="tcard-qual">M.Sc. (Maths), B.Ed. (11–12)<br>Higher Secondary Teacher TRE-01</div>
+      
+      <div class="tcard-contact">
+        <a href="tel:9122785739" class="tcontact-link tphone" title="Call Pooja Kumari">📞 9122785739</a>
+        <a href="https://wa.me/919122785739" target="_blank" rel="noopener" class="tcontact-link twhatsapp" title="WhatsApp Pooja Kumari">💬 WhatsApp</a>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="tcard rv" data-category="science" data-name="neetu kumari chemistry">
+    <div class="tcard-img-wrap">
+      <img src="images/teachers/neetu-kumari.jpg" alt="Neetu Kumari - Chemistry Teacher" class="tcard-img" loading="lazy"
+           onerror="this.onerror=null; this.src='images/teacher-placeholder.svg'">
+      <div class="tcard-num">#08</div>
+    </div>
+    <div class="tcard-body">
+      <h3 class="tcard-name">Neetu Kumari</h3>
+      <div class="tcard-hi-name">नीतू कुमारी</div>
+      <div class="tcard-subj">Chemistry</div>
+      <div class="tcard-qual">B.Sc. (Chemistry), B.Ed.<br>Secondary Science Teacher (9–10)</div>
+      
+      <div class="tcard-contact">
+        <a href="tel:9708282309" class="tcontact-link tphone" title="Call Neetu Kumari">📞 9708282309</a>
+        <a href="https://wa.me/919708282309" target="_blank" rel="noopener" class="tcontact-link twhatsapp" title="WhatsApp Neetu Kumari">💬 WhatsApp</a>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="tcard rv" data-category="social" data-name="dr. sukhendu kumar social science">
+    <div class="tcard-img-wrap">
+      <img src="images/teachers/dr-sukhendu-kumar.jpg" alt="Dr. Sukhendu Kumar - Social Science Teacher" class="tcard-img" loading="lazy"
+           onerror="this.onerror=null; this.src='images/teacher-placeholder.svg'">
+      <div class="tcard-num">#09</div>
+    </div>
+    <div class="tcard-body">
+      <h3 class="tcard-name">Dr. Sukhendu Kumar</h3>
+      <div class="tcard-hi-name">डॉ. सुखेंदु कुमार</div>
+      <div class="tcard-subj">Social Science</div>
+      <div class="tcard-qual">M.A., Ph.D.<br>Secondary Social Science Teacher</div>
+      
+      <div class="tcard-contact">
+        <a href="tel:9334800933" class="tcontact-link tphone" title="Call Dr. Sukhendu Kumar">📞 9334800933</a>
+        <a href="https://wa.me/919334800933" target="_blank" rel="noopener" class="tcontact-link twhatsapp" title="WhatsApp Dr. Sukhendu Kumar">💬 WhatsApp</a>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="tcard rv" data-category="social" data-name="lovely kumari social science">
+    <div class="tcard-img-wrap">
+      <img src="images/teachers/lovely-kumari.jpg" alt="Lovely Kumari - Social Science Teacher" class="tcard-img" loading="lazy"
+           onerror="this.onerror=null; this.src='images/teacher-placeholder.svg'">
+      <div class="tcard-num">#10</div>
+    </div>
+    <div class="tcard-body">
+      <h3 class="tcard-name">Lovely Kumari</h3>
+      <div class="tcard-hi-name">लवली कुमारी</div>
+      <div class="tcard-subj">Social Science</div>
+      <div class="tcard-qual">M.A. History, B.Ed. (9–10)<br>Secondary Social Science Teacher TRE-01</div>
+      
+      <div class="tcard-contact">
+        <a href="tel:9123420095" class="tcontact-link tphone" title="Call Lovely Kumari">📞 9123420095</a>
+        <a href="https://wa.me/919123420095" target="_blank" rel="noopener" class="tcontact-link twhatsapp" title="WhatsApp Lovely Kumari">💬 WhatsApp</a>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="tcard rv" data-category="commerce_comp" data-name="neha kumari computer science">
+    <div class="tcard-img-wrap">
+      <img src="images/teachers/neha-kumari.jpg" alt="Neha Kumari - Computer Science Teacher" class="tcard-img" loading="lazy"
+           onerror="this.onerror=null; this.src='images/teacher-placeholder.svg'">
+      <div class="tcard-num">#11</div>
+    </div>
+    <div class="tcard-body">
+      <h3 class="tcard-name">Neha Kumari</h3>
+      <div class="tcard-hi-name">नेहा कुमारी</div>
+      <div class="tcard-subj">Computer Science</div>
+      <div class="tcard-qual">M.C.A. (11–12)<br>Higher Secondary Teacher TRE-01</div>
+      
+      <div class="tcard-contact">
+        <a href="tel:7836815275" class="tcontact-link tphone" title="Call Neha Kumari">📞 7836815275</a>
+        <a href="https://wa.me/917836815275" target="_blank" rel="noopener" class="tcontact-link twhatsapp" title="WhatsApp Neha Kumari">💬 WhatsApp</a>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="tcard rv" data-category="commerce_comp" data-name="dr. praveen kumar accountancy (+2)">
+    <div class="tcard-img-wrap">
+      <img src="images/teachers/dr-praveen-kumar.jpg" alt="Dr. Praveen Kumar - Accountancy (+2) Teacher" class="tcard-img" loading="lazy"
+           onerror="this.onerror=null; this.src='images/teacher-placeholder.svg'">
+      <div class="tcard-num">#12</div>
+    </div>
+    <div class="tcard-body">
+      <h3 class="tcard-name">Dr. Praveen Kumar</h3>
+      <div class="tcard-hi-name">डॉ. प्रवीण कुमार</div>
+      <div class="tcard-subj">Accountancy (+2)</div>
+      <div class="tcard-qual">M.Com, Ph.D., B.Ed. (11–12)<br>Higher Secondary Teacher TRE-01</div>
+      
+      <div class="tcard-contact">
+        <a href="tel:7004638428" class="tcontact-link tphone" title="Call Dr. Praveen Kumar">📞 7004638428</a>
+        <a href="https://wa.me/917004638428" target="_blank" rel="noopener" class="tcontact-link twhatsapp" title="WhatsApp Dr. Praveen Kumar">💬 WhatsApp</a>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="tcard rv" data-category="social" data-name="babita kumari political science (+2)">
+    <div class="tcard-img-wrap">
+      <img src="images/teachers/babita-kumari.jpg" alt="Babita Kumari - Political Science (+2) Teacher" class="tcard-img" loading="lazy"
+           onerror="this.onerror=null; this.src='images/teacher-placeholder.svg'">
+      <div class="tcard-num">#13</div>
+    </div>
+    <div class="tcard-body">
+      <h3 class="tcard-name">Babita Kumari</h3>
+      <div class="tcard-hi-name">बबिता कुमारी</div>
+      <div class="tcard-subj">Political Science (+2)</div>
+      <div class="tcard-qual">M.A. Political Science, B.Ed. (11–12)<br>Higher Secondary Teacher TRE-01</div>
+      
+      <div class="tcard-contact">
+        <a href="tel:6299714117" class="tcontact-link tphone" title="Call Babita Kumari">📞 6299714117</a>
+        <a href="https://wa.me/916299714117" target="_blank" rel="noopener" class="tcontact-link twhatsapp" title="WhatsApp Babita Kumari">💬 WhatsApp</a>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="tcard rv" data-category="languages" data-name="anjali kumari english (+2)">
+    <div class="tcard-img-wrap">
+      <img src="images/teachers/anjali-kumari.jpg" alt="Anjali Kumari - English (+2) Teacher" class="tcard-img" loading="lazy"
+           onerror="this.onerror=null; this.src='images/teacher-placeholder.svg'">
+      <div class="tcard-num">#14</div>
+    </div>
+    <div class="tcard-body">
+      <h3 class="tcard-name">Anjali Kumari</h3>
+      <div class="tcard-hi-name">अंजली कुमारी</div>
+      <div class="tcard-subj">English (+2)</div>
+      <div class="tcard-qual">M.A. English, B.Ed. (11–12)<br>Higher Secondary Teacher TRE-01</div>
+      
+    </div>
+  </div>
+
+
+  <div class="tcard rv" data-category="social" data-name="amarendra prasad social science">
+    <div class="tcard-img-wrap">
+      <img src="images/teachers/amarendra-prasad.jpg" alt="Amarendra Prasad - Social Science Teacher" class="tcard-img" loading="lazy"
+           onerror="this.onerror=null; this.src='images/teacher-placeholder.svg'">
+      <div class="tcard-num">#15</div>
+    </div>
+    <div class="tcard-body">
+      <h3 class="tcard-name">Amarendra Prasad</h3>
+      <div class="tcard-hi-name">अमरेन्द्र प्रसाद</div>
+      <div class="tcard-subj">Social Science</div>
+      <div class="tcard-qual">M.A., B.Ed. (9–10)<br>Secondary Social Science Teacher</div>
+      
+      <div class="tcard-contact">
+        <a href="tel:9905385190" class="tcontact-link tphone" title="Call Amarendra Prasad">📞 9905385190</a>
+        <a href="https://wa.me/919905385190" target="_blank" rel="noopener" class="tcontact-link twhatsapp" title="WhatsApp Amarendra Prasad">💬 WhatsApp</a>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="tcard rv" data-category="science" data-name="sushmita pathak chemistry (+2)">
+    <div class="tcard-img-wrap">
+      <img src="images/teachers/sushmita-pathak.jpg" alt="Sushmita Pathak - Chemistry (+2) Teacher" class="tcard-img" loading="lazy"
+           onerror="this.onerror=null; this.src='images/teacher-placeholder.svg'">
+      <div class="tcard-num">#16</div>
+    </div>
+    <div class="tcard-body">
+      <h3 class="tcard-name">Sushmita Pathak</h3>
+      <div class="tcard-hi-name">सुष्मिता पाठक</div>
+      <div class="tcard-subj">Chemistry (+2)</div>
+      <div class="tcard-qual">M.Sc. Chemistry, B.Ed. (11–12)<br>Higher Secondary Teacher TRE-01</div>
+      
+      <div class="tcard-contact">
+        <a href="tel:9004249654" class="tcontact-link tphone" title="Call Sushmita Pathak">📞 9004249654</a>
+        <a href="https://wa.me/919004249654" target="_blank" rel="noopener" class="tcontact-link twhatsapp" title="WhatsApp Sushmita Pathak">💬 WhatsApp</a>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="tcard rv" data-category="social" data-name="prabhat kumar social science">
+    <div class="tcard-img-wrap">
+      <img src="images/teachers/prabhat-kumar.jpg" alt="Prabhat Kumar - Social Science Teacher" class="tcard-img" loading="lazy"
+           onerror="this.onerror=null; this.src='images/teacher-placeholder.svg'">
+      <div class="tcard-num">#17</div>
+    </div>
+    <div class="tcard-body">
+      <h3 class="tcard-name">Prabhat Kumar</h3>
+      <div class="tcard-hi-name">प्रभात कुमार</div>
+      <div class="tcard-subj">Social Science</div>
+      <div class="tcard-qual">M.A., B.Ed. (9–10)<br>Secondary Social Science Teacher</div>
+      
+      <div class="tcard-contact">
+        <a href="tel:6299972575" class="tcontact-link tphone" title="Call Prabhat Kumar">📞 6299972575</a>
+        <a href="https://wa.me/916299972575" target="_blank" rel="noopener" class="tcontact-link twhatsapp" title="WhatsApp Prabhat Kumar">💬 WhatsApp</a>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="tcard rv" data-category="languages" data-name="rajeev kumar english">
+    <div class="tcard-img-wrap">
+      <img src="images/teachers/rajeev-kumar.jpg" alt="Rajeev Kumar - English Teacher" class="tcard-img" loading="lazy"
+           onerror="this.onerror=null; this.src='images/teacher-placeholder.svg'">
+      <div class="tcard-num">#18</div>
+    </div>
+    <div class="tcard-body">
+      <h3 class="tcard-name">Rajeev Kumar</h3>
+      <div class="tcard-hi-name">राजीव कुमार</div>
+      <div class="tcard-subj">English</div>
+      <div class="tcard-qual">M.A. English, M.Ed., LLB (9–10)<br>Secondary English Teacher</div>
+      
+      <div class="tcard-contact">
+        <a href="tel:9572044505" class="tcontact-link tphone" title="Call Rajeev Kumar">📞 9572044505</a>
+        <a href="https://wa.me/919572044505" target="_blank" rel="noopener" class="tcontact-link twhatsapp" title="WhatsApp Rajeev Kumar">💬 WhatsApp</a>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="tcard rv" data-category="library" data-name="raman prasad singh head librarian">
+    <div class="tcard-img-wrap">
+      <img src="images/teachers/raman-prasad-singh.jpg" alt="Raman Prasad Singh - Head Librarian Teacher" class="tcard-img" loading="lazy"
+           onerror="this.onerror=null; this.src='images/teacher-placeholder.svg'">
+      <div class="tcard-num">#19</div>
+    </div>
+    <div class="tcard-body">
+      <h3 class="tcard-name">Raman Prasad Singh</h3>
+      <div class="tcard-hi-name">रमण प्रसाद सिंह</div>
+      <div class="tcard-subj">Head Librarian</div>
+      <div class="tcard-qual">M.Sc., B.Lib.<br>Central Library In-Charge</div>
+      
+      <div class="tcard-contact">
+        <a href="tel:7631626828" class="tcontact-link tphone" title="Call Raman Prasad Singh">📞 7631626828</a>
+        <a href="https://wa.me/917631626828" target="_blank" rel="noopener" class="tcontact-link twhatsapp" title="WhatsApp Raman Prasad Singh">💬 WhatsApp</a>
+      </div>
+    </div>
+  </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-grid">
+        <div class="fcol">
+          <div class="fbrand">P.M. Shri +2 High School</div>
+          <div class="fbrand-sub">Barbigha, Sheikhpura (Bihar) - PIN: 811101</div>
+          <p>The premier government educational institution of Barbigha, serving excellence in education since 3 January 1933 under Bihar School Examination Board (BSEB, Patna).</p>
+          <div style="margin-top: 12px; font-size: 0.8rem; color: #ffcc80;">
+            UDISE Code: 10262907004 | Affiliation: BSEB Patna
+          </div>
+        </div>
+        <div class="fcol">
+          <h4>+2 Academic Streams</h4>
+          <ul>
+            <li><a href="about.html#seats">🔬 I.Sc. Science (333 Seats)</a></li>
+            <li><a href="about.html#seats">🎨 I.A. Arts (120 Seats)</a></li>
+            <li><a href="about.html#seats">📊 I.Com. Commerce (120 Seats)</a></li>
+            <li><a href="contact.html">📋 OFSS Bihar Online Admission</a></li>
+            <li><a href="ebooks.html">📖 State and NCERT Textbooks</a></li>
+            <li><a href="about.html#uniform">👔 Official School Uniform</a></li>
+          </ul>
+        </div>
+        <div class="fcol">
+          <h4>Institutional Contact</h4>
+          <p>
+            📍 Near Sri Babu Chowk / NH-82, Barbigha<br>
+            District Sheikhpura, Bihar - 811101<br><br>
+            📞 Helpline: <a href="tel:06341295000" style="color:var(--gold-light);">06341-295000</a><br>
+            ✉️ Email: <a href="mailto:highschoolbarbigha@gmail.com" style="color:var(--gold-light);">highschoolbarbigha@gmail.com</a><br>
+            ⏰ Office Hours: 9:30 AM – 4:00 PM (Mon–Sat)
+          </p>
+        </div>
+      </div>
+      <div class="fbottom">
+        &copy; 1933–2026 P.M. Shri +2 High School, Barbigha, District Sheikhpura (Bihar). UDISE: 10262907004.<br>
+        All Rights Reserved. Affiliated to Bihar School Examination Board (BSEB, Patna).
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>

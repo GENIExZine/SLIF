@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#8B0000">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="format-detection" content="telephone=no">
+  <title>Support and Administrative Staff | P.M. Shri +2 High School, Barbigha</title>
+  <meta name="description" content="Meet our office head clerk, laboratory assistants, campus attendants, and security personnel supporting P.M. Shri +2 High School Barbigha.">
+  <meta name="keywords" content="P.M. Shri +2 High School Barbigha, Barbigha High School, Sheikhpura School, Ramdhari Singh Dinkar Smriti Manch, PM SHRI School Bihar, BSEB Patna">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="images/school-logo.png">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Tiro+Devanagari+Hindi:ital@0;1&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- TOP BAR -->
+  <div class="topbar">
+    <div class="topbar-container">
+      <div class="topbar-left" id="topbarLeft">
+        <span class="topbar-item" id="tbEst">🏛️ स्थापित: 3 जनवरी 1933</span>
+        <span class="topbar-sep">|</span>
+        <span class="topbar-item" id="tbApp">📜 प्रस्वीकृति: जनवरी 1937</span>
+        <span class="topbar-sep">|</span>
+        <span class="topbar-item" id="tbUpg">🎓 +2 उत्क्रमण: 2010</span>
+        <span class="topbar-sep">|</span>
+        <span class="topbar-item" id="tbUdise">📋 UDISE Code: 10262907004</span>
+      </div>
+      <div class="topbar-right">
+        <button class="lang-toggle-btn" onclick="toggleLanguage()" id="langSwitchBtn" aria-label="Toggle Language Hindi / English">
+          🌐 <span id="langSwitchLabel">हिन्दी (Hindi)</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <header>
+    <div class="header-container">
+      <div class="hlogo-wrapper">
+        <a href="index.html" class="hlogo" title="P.M. Shri +2 High School Barbigha - Home">
+          <img src="images/school-logo.png" alt="Founder Headmaster Rashtrakavi Ramdhari Singh Dinkar Statue">
+        </a>
+      </div>
+      <h1 class="hname" id="hdrTitle">P.M. Shri +2 High School</h1>
+      <div class="hname-en" id="hdrSub">Barbigha, District Sheikhpura (Bihar)</div>
+      <div class="hsub" id="hdrPin">P.O. and P.S. Barbigha, PIN: 811101 — Affiliated to BSEB Patna</div>
+      <div class="hbadges">
+        <span class="hbadge" id="hbPin">📌 PIN: 811101</span>
+        <span class="hbadge" id="hbEst">🏛️ Est. 1933 (90+ Years)</span>
+        <span class="hbadge" id="hbPm">🏅 PM-SHRI Exemplary School</span>
+        <span class="hbadge" id="hbBseb">🎓 Bihar School Examination Board</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- 8 OPTIONS NAVIGATION -->
+  <nav id="mainNav">
+    <div class="nav-container">
+      <span class="nav-brand-mobile">🏫 Barbigha High School</span>
+      <button class="nav-toggle-btn" id="navToggle" aria-label="Toggle Navigation Menu">
+        <span>☰</span> <span>Menu</span>
+      </button>
+      <div class="nav-links" id="navLinks">
+        <a class="nav-item " href="index.html">Home</a>
+        <a class="nav-item " href="about.html">About</a>
+        <a class="nav-item " href="campus.html">Campus</a>
+        <a class="nav-item " href="principal.html">Principal</a>
+        <a class="nav-item " href="teachers.html">Teachers</a>
+        <a class="nav-item active" href="staff.html">Staff</a>
+        <a class="nav-item " href="contact.html">Contact</a>
+        <a class="nav-item " href="ebooks.html">eBooks</a>
+        <a class="nav-item " href="gallery.html">Classroom Gallery</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO MOTTO STRIP -->
+  <div class="hero" id="heroMotto">
+    "ज्ञान ही शक्ति है — Knowledge is Power"
+  </div>
+
+  <!-- BREADCRUMB -->
+  <div class="breadcrumb-wrap">
+    <div class="breadcrumb-container">
+      <a href="index.html">🏠 Home</a>
+      <span class="breadcrumb-sep">/</span>
+      <span class="breadcrumb-current">Support Staff</span>
+    </div>
+  </div>
+
+  <section id="staff">
+    <div class="section-container">
+      <h2 class="sec-title" id="secTitleStaff">Support and Administrative Staff <span id="secSubStaff">The Backbone of Institutional Operations</span></h2>
+      <p class="sec-subtitle" id="secDescStaff">Our dedicated office, security, laboratory, and sanitation personnel who keep our school running smoothly and safely each day.</p>
+
+      <div class="sgrid">
+        
+  <div class="scard rv">
+    <div class="scard-img-wrap">
+      <img src="images/staff/diwakar-kumar-pandey.jpg" alt="Diwakar Kumar Pandey - Head Clerk" class="scard-img" loading="lazy"
+           onerror="this.onerror=null; this.src='images/teacher-placeholder.svg'">
+      <div class="scard-num">#01</div>
+    </div>
+    <div class="scard-body">
+      <h3 class="scard-name">Diwakar Kumar Pandey</h3>
+      <div class="scard-hi-name">दिवाकर कु. पाण्डेय</div>
+      <div class="scard-role">Head Clerk</div>
+      <div class="srole-hi">कार्यालय लिपिक (Head Clerk)</div>
+      <div class="squal">Administrative Office and Records In-charge</div>
+      
+    </div>
+  </div>
+
+
+  <div class="scard rv">
+    <div class="scard-img-wrap">
+      <img src="images/staff/roona-devi.jpg" alt="Roona Devi - Attendant" class="scard-img" loading="lazy"
+           onerror="this.onerror=null; this.src='images/teacher-placeholder.svg'">
+      <div class="scard-num">#02</div>
+    </div>
+    <div class="scard-body">
+      <h3 class="scard-name">Roona Devi</h3>
+      <div class="scard-hi-name">रुना देवी</div>
+      <div class="scard-role">Attendant</div>
+      <div class="srole-hi">परिचारी (Attendant)</div>
+      <div class="squal">Campus and Office Support Staff</div>
+      
+      <div class="scontact">
+        <a href="tel:7256877417" class="scontact-link sphone">📞 7256877417</a>
+        <a href="https://wa.me/917256877417" target="_blank" rel="noopener" class="scontact-link swhatsapp">💬 WhatsApp</a>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="scard rv">
+    <div class="scard-img-wrap">
+      <img src="images/staff/prabhat-kumar-singh.jpg" alt="Prabhat Kumar Singh - Attendant" class="scard-img" loading="lazy"
+           onerror="this.onerror=null; this.src='images/teacher-placeholder.svg'">
+      <div class="scard-num">#03</div>
+    </div>
+    <div class="scard-body">
+      <h3 class="scard-name">Prabhat Kumar Singh</h3>
+      <div class="scard-hi-name">प्रभात कुमार सिंह</div>
+      <div class="scard-role">Attendant</div>
+      <div class="srole-hi">परिचारी (Attendant)</div>
+      <div class="squal">Classrooms and Facilities Support</div>
+      
+      <div class="scontact">
+        <a href="tel:9102719273" class="scontact-link sphone">📞 9102719273</a>
+        <a href="https://wa.me/919102719273" target="_blank" rel="noopener" class="scontact-link swhatsapp">💬 WhatsApp</a>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="scard rv">
+    <div class="scard-img-wrap">
+      <img src="images/staff/vijay-kumar.jpg" alt="Vijay Kumar - Night Guard" class="scard-img" loading="lazy"
+           onerror="this.onerror=null; this.src='images/teacher-placeholder.svg'">
+      <div class="scard-num">#04</div>
+    </div>
+    <div class="scard-body">
+      <h3 class="scard-name">Vijay Kumar</h3>
+      <div class="scard-hi-name">विजय कुमार</div>
+      <div class="scard-role">Night Guard</div>
+      <div class="srole-hi">रात्रि प्रहरी (Night Guard)</div>
+      <div class="squal">Campus Security and Safety In-charge</div>
+      
+      <div class="scontact">
+        <a href="tel:9006443427" class="scontact-link sphone">📞 9006443427</a>
+        <a href="https://wa.me/919006443427" target="_blank" rel="noopener" class="scontact-link swhatsapp">💬 WhatsApp</a>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="scard rv">
+    <div class="scard-img-wrap">
+      <img src="images/staff/ramanand-singh.jpg" alt="Ramanand Singh - Attendant" class="scard-img" loading="lazy"
+           onerror="this.onerror=null; this.src='images/teacher-placeholder.svg'">
+      <div class="scard-num">#05</div>
+    </div>
+    <div class="scard-body">
+      <h3 class="scard-name">Ramanand Singh</h3>
+      <div class="scard-hi-name">रामानंद सिंह</div>
+      <div class="scard-role">Attendant</div>
+      <div class="srole-hi">परिचारी (Attendant)</div>
+      <div class="squal">Science Laboratories Assistant (B.Sc. Physics)</div>
+      
+      <div class="scontact">
+        <a href="tel:9955548138" class="scontact-link sphone">📞 9955548138</a>
+        <a href="https://wa.me/919955548138" target="_blank" rel="noopener" class="scontact-link swhatsapp">💬 WhatsApp</a>
+      </div>
+    </div>
+  </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-grid">
+        <div class="fcol">
+          <div class="fbrand">P.M. Shri +2 High School</div>
+          <div class="fbrand-sub">Barbigha, Sheikhpura (Bihar) - PIN: 811101</div>
+          <p>The premier government educational institution of Barbigha, serving excellence in education since 3 January 1933 under Bihar School Examination Board (BSEB, Patna).</p>
+          <div style="margin-top: 12px; font-size: 0.8rem; color: #ffcc80;">
+            UDISE Code: 10262907004 | Affiliation: BSEB Patna
+          </div>
+        </div>
+        <div class="fcol">
+          <h4>+2 Academic Streams</h4>
+          <ul>
+            <li><a href="about.html#seats">🔬 I.Sc. Science (333 Seats)</a></li>
+            <li><a href="about.html#seats">🎨 I.A. Arts (120 Seats)</a></li>
+            <li><a href="about.html#seats">📊 I.Com. Commerce (120 Seats)</a></li>
+            <li><a href="contact.html">📋 OFSS Bihar Online Admission</a></li>
+            <li><a href="ebooks.html">📖 State and NCERT Textbooks</a></li>
+            <li><a href="about.html#uniform">👔 Official School Uniform</a></li>
+          </ul>
+        </div>
+        <div class="fcol">
+          <h4>Institutional Contact</h4>
+          <p>
+            📍 Near Sri Babu Chowk / NH-82, Barbigha<br>
+            District Sheikhpura, Bihar - 811101<br><br>
+            📞 Helpline: <a href="tel:06341295000" style="color:var(--gold-light);">06341-295000</a><br>
+            ✉️ Email: <a href="mailto:highschoolbarbigha@gmail.com" style="color:var(--gold-light);">highschoolbarbigha@gmail.com</a><br>
+            ⏰ Office Hours: 9:30 AM – 4:00 PM (Mon–Sat)
+          </p>
+        </div>
+      </div>
+      <div class="fbottom">
+        &copy; 1933–2026 P.M. Shri +2 High School, Barbigha, District Sheikhpura (Bihar). UDISE: 10262907004.<br>
+        All Rights Reserved. Affiliated to Bihar School Examination Board (BSEB, Patna).
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>

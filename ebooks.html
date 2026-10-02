@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#8B0000">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="format-detection" content="telephone=no">
+  <title>Digital Library and eBooks | P.M. Shri +2 High School, Barbigha</title>
+  <meta name="description" content="Read online and download free state and NCERT digital curriculum textbooks for Class 9, 10, 11, and 12 (+2 Science, Arts, Commerce).">
+  <meta name="keywords" content="P.M. Shri +2 High School Barbigha, Barbigha High School, Sheikhpura School, Ramdhari Singh Dinkar Smriti Manch, PM SHRI School Bihar, BSEB Patna">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="images/school-logo.png">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Tiro+Devanagari+Hindi:ital@0;1&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- TOP BAR -->
+  <div class="topbar">
+    <div class="topbar-container">
+      <div class="topbar-left" id="topbarLeft">
+        <span class="topbar-item" id="tbEst">🏛️ स्थापित: 3 जनवरी 1933</span>
+        <span class="topbar-sep">|</span>
+        <span class="topbar-item" id="tbApp">📜 प्रस्वीकृति: जनवरी 1937</span>
+        <span class="topbar-sep">|</span>
+        <span class="topbar-item" id="tbUpg">🎓 +2 उत्क्रमण: 2010</span>
+        <span class="topbar-sep">|</span>
+        <span class="topbar-item" id="tbUdise">📋 UDISE Code: 10262907004</span>
+      </div>
+      <div class="topbar-right">
+        <button class="lang-toggle-btn" onclick="toggleLanguage()" id="langSwitchBtn" aria-label="Toggle Language Hindi / English">
+          🌐 <span id="langSwitchLabel">हिन्दी (Hindi)</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <header>
+    <div class="header-container">
+      <div class="hlogo-wrapper">
+        <a href="index.html" class="hlogo" title="P.M. Shri +2 High School Barbigha - Home">
+          <img src="images/school-logo.png" alt="Founder Headmaster Rashtrakavi Ramdhari Singh Dinkar Statue">
+        </a>
+      </div>
+      <h1 class="hname" id="hdrTitle">P.M. Shri +2 High School</h1>
+      <div class="hname-en" id="hdrSub">Barbigha, District Sheikhpura (Bihar)</div>
+      <div class="hsub" id="hdrPin">P.O. and P.S. Barbigha, PIN: 811101 — Affiliated to BSEB Patna</div>
+      <div class="hbadges">
+        <span class="hbadge" id="hbPin">📌 PIN: 811101</span>
+        <span class="hbadge" id="hbEst">🏛️ Est. 1933 (90+ Years)</span>
+        <span class="hbadge" id="hbPm">🏅 PM-SHRI Exemplary School</span>
+        <span class="hbadge" id="hbBseb">🎓 Bihar School Examination Board</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- 8 OPTIONS NAVIGATION -->
+  <nav id="mainNav">
+    <div class="nav-container">
+      <span class="nav-brand-mobile">🏫 Barbigha High School</span>
+      <button class="nav-toggle-btn" id="navToggle" aria-label="Toggle Navigation Menu">
+        <span>☰</span> <span>Menu</span>
+      </button>
+      <div class="nav-links" id="navLinks">
+        <a class="nav-item " href="index.html">Home</a>
+        <a class="nav-item " href="about.html">About</a>
+        <a class="nav-item " href="campus.html">Campus</a>
+        <a class="nav-item " href="principal.html">Principal</a>
+        <a class="nav-item " href="teachers.html">Teachers</a>
+        <a class="nav-item " href="staff.html">Staff</a>
+        <a class="nav-item " href="contact.html">Contact</a>
+        <a class="nav-item active" href="ebooks.html">eBooks</a>
+        <a class="nav-item " href="gallery.html">Classroom Gallery</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO MOTTO STRIP -->
+  <div class="hero" id="heroMotto">
+    "ज्ञान ही शक्ति है — Knowledge is Power"
+  </div>
+
+  <!-- BREADCRUMB -->
+  <div class="breadcrumb-wrap">
+    <div class="breadcrumb-container">
+      <a href="index.html">🏠 Home</a>
+      <span class="breadcrumb-sep">/</span>
+      <span class="breadcrumb-current">Digital Library and eBooks</span>
+    </div>
+  </div>
+
+  <section id="ebooks">
+    <div class="section-container">
+      <h2 class="sec-title" id="secTitleEbooks">Digital Library and eBooks <span id="secSubEbooks">Government Curriculum and Online Study Material</span></h2>
+      <p class="sec-subtitle" id="secDescEbooks">Access official digitized curriculum textbooks for Class 9, 10, 11, and 12 (+2 Science, Arts, Commerce) free of cost under PM-SHRI digital initiative.</p>
+
+      <!-- Digital Library Info Banner -->
+      <div class="ebook-banner rv">
+        <div class="ebook-banner-icon">📚</div>
+        <div class="ebook-banner-text">
+          <h3>Government Digital Curriculum and Student Book Bank</h3>
+          <p>Read full chapters online or download official state textbooks (BSTBPC Patna and NCERT New Delhi) directly for free.</p>
+        </div>
+      </div>
+
+      <!-- Class & Stream Filters -->
+      <div class="ebook-filters rv">
+        <button class="filter-btn ebook-filter-btn active" data-class="all">All Textbooks (11)</button>
+        <button class="filter-btn ebook-filter-btn" data-class="class9">Class 9 (BSEB)</button>
+        <button class="filter-btn ebook-filter-btn" data-class="class10">Class 10 (Matric)</button>
+        <button class="filter-btn ebook-filter-btn" data-class="class11">Class 11 (+2)</button>
+        <button class="filter-btn ebook-filter-btn" data-class="class12">Class 12 (+2)</button>
+        <button class="filter-btn ebook-filter-btn" data-class="science">Science Stream</button>
+        <button class="filter-btn ebook-filter-btn" data-class="commerce">Commerce and Computer</button>
+        <button class="filter-btn ebook-filter-btn" data-class="arts">Arts Stream</button>
+      </div>
+
+      <!-- eBooks Grid -->
+      <div class="ebooks-grid" id="ebooksGrid">
+        
+  <div class="ebook-card rv" data-class="class9" data-stream="science">
+    <div class="ebook-card-top">
+      <div class="ebook-icon">🔬</div>
+      <div class="ebook-stream-badge">BSEB Science</div>
+    </div>
+    <div class="ebook-body">
+      <div class="ebook-class">Class 9</div>
+      <div class="ebook-title">Science (विज्ञान) — Class 9</div>
+      <div class="ebook-desc">Matter in Our Surroundings, Is Matter Around Us Pure, Atoms and Molecules, Structure of the Atom, The Fundamental Unit of Life, Tissues, Motion, Force and Laws of Motion, Gravitation, Work and Energy, Sound, Improvement in Food Resources.</div>
+      <div class="ebook-actions">
+        <button class="ebook-btn-read" onclick='openEbookModal("Science (विज्ञान) — Class 9", "Class 9", "BSEB Science", "Matter in Our Surroundings, Is Matter Around Us Pure, Atoms and Molecules, Structure of the Atom, The Fundamental Unit of Life, Tissues, Motion, Force and Laws of Motion, Gravitation, Work and Energy, Sound, Improvement in Food Resources.", ["1. Matter in Our Surroundings","2. Is Matter Around Us Pure","3. Atoms and Molecules","4. Structure of the Atom","5. The Fundamental Unit of Life","6. Tissues","7. Motion","8. Force and Laws of Motion","9. Gravitation","10. Work and Energy","11. Sound","12. Improvement in Food Resources"], "https://ncert.nic.in/textbook.php?iesc1=0-12")'>
+          📖 Read Chapters
+        </button>
+        <a href="https://ncert.nic.in/textbook.php?iesc1=0-12" target="_blank" rel="noopener" class="ebook-btn-dl" title="Download official textbook PDF from NCERT/BSTBPC portal">
+          ⬇️ Official PDF
+        </a>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="ebook-card rv" data-class="class9" data-stream="maths">
+    <div class="ebook-card-top">
+      <div class="ebook-icon">📐</div>
+      <div class="ebook-stream-badge">BSEB Mathematics</div>
+    </div>
+    <div class="ebook-body">
+      <div class="ebook-class">Class 9</div>
+      <div class="ebook-title">Mathematics (गणित) — Class 9</div>
+      <div class="ebook-desc">Number Systems, Polynomials, Coordinate Geometry, Linear Equations in Two Variables, Lines and Angles, Triangles, Quadrilaterals, Circles, Heron's Formula, Statistics.</div>
+      <div class="ebook-actions">
+        <button class="ebook-btn-read" onclick='openEbookModal("Mathematics (गणित) — Class 9", "Class 9", "BSEB Mathematics", "Number Systems, Polynomials, Coordinate Geometry, Linear Equations in Two Variables, Lines and Angles, Triangles, Quadrilaterals, Circles, Heron's Formula, Statistics.", ["1. Number Systems","2. Polynomials","3. Coordinate Geometry","4. Linear Equations in Two Variables","5. Introduction to Euclid's Geometry","6. Lines and Angles","7. Triangles","8. Quadrilaterals","9. Circles","10. Heron's Formula","12. Statistics"], "https://ncert.nic.in/textbook.php?iemh1=0-12")'>
+          📖 Read Chapters
+        </button>
+        <a href="https://ncert.nic.in/textbook.php?iemh1=0-12" target="_blank" rel="noopener" class="ebook-btn-dl" title="Download official textbook PDF from NCERT/BSTBPC portal">
+          ⬇️ Official PDF
+        </a>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="ebook-card rv" data-class="class10" data-stream="science">
+    <div class="ebook-card-top">
+      <div class="ebook-icon">⚡</div>
+      <div class="ebook-stream-badge">BSEB Science</div>
+    </div>
+    <div class="ebook-body">
+      <div class="ebook-class">Class 10</div>
+      <div class="ebook-title">Science (विज्ञान) — Class 10</div>
+      <div class="ebook-desc">Chemical Reactions and Equations, Acids Bases and Salts, Metals and Non-metals, Carbon and its Compounds, Life Processes, Control and Coordination, How do Organisms Reproduce?, Heredity, Light – Reflection and Refraction, Human Eye, Electricity, Magnetic Effects, Our Environment.</div>
+      <div class="ebook-actions">
+        <button class="ebook-btn-read" onclick='openEbookModal("Science (विज्ञान) — Class 10", "Class 10", "BSEB Science", "Chemical Reactions and Equations, Acids Bases and Salts, Metals and Non-metals, Carbon and its Compounds, Life Processes, Control and Coordination, How do Organisms Reproduce?, Heredity, Light – Reflection and Refraction, Human Eye, Electricity, Magnetic Effects, Our Environment.", ["1. Chemical Reactions and Equations","2. Acids, Bases and Salts","3. Metals and Non-metals","4. Carbon and its Compounds","5. Life Processes","6. Control and Coordination","7. How do Organisms Reproduce?","8. Heredity","9. Light – Reflection and Refraction","10. The Human Eye","11. Electricity","12. Magnetic Effects of Electric Current","13. Our Environment"], "https://ncert.nic.in/textbook.php?jesc1=0-13")'>
+          📖 Read Chapters
+        </button>
+        <a href="https://ncert.nic.in/textbook.php?jesc1=0-13" target="_blank" rel="noopener" class="ebook-btn-dl" title="Download official textbook PDF from NCERT/BSTBPC portal">
+          ⬇️ Official PDF
+        </a>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="ebook-card rv" data-class="class10" data-stream="maths">
+    <div class="ebook-card-top">
+      <div class="ebook-icon">📊</div>
+      <div class="ebook-stream-badge">BSEB Mathematics</div>
+    </div>
+    <div class="ebook-body">
+      <div class="ebook-class">Class 10</div>
+      <div class="ebook-title">Mathematics (गणित) — Class 10</div>
+      <div class="ebook-desc">Real Numbers, Polynomials, Pair of Linear Equations in Two Variables, Quadratic Equations, Arithmetic Progressions, Triangles, Coordinate Geometry, Trigonometry, Circles, Areas Related to Circles, Surface Areas and Volumes, Statistics, Probability.</div>
+      <div class="ebook-actions">
+        <button class="ebook-btn-read" onclick='openEbookModal("Mathematics (गणित) — Class 10", "Class 10", "BSEB Mathematics", "Real Numbers, Polynomials, Pair of Linear Equations in Two Variables, Quadratic Equations, Arithmetic Progressions, Triangles, Coordinate Geometry, Trigonometry, Circles, Areas Related to Circles, Surface Areas and Volumes, Statistics, Probability.", ["1. Real Numbers","2. Polynomials","3. Linear Equations in Two Variables","4. Quadratic Equations","5. Arithmetic Progressions","6. Triangles","7. Coordinate Geometry","8. Introduction to Trigonometry","9. Applications of Trigonometry","10. Circles","11. Areas Related to Circles","12. Surface Areas and Volumes","13. Statistics","14. Probability"], "https://ncert.nic.in/textbook.php?jemh1=0-14")'>
+          📖 Read Chapters
+        </button>
+        <a href="https://ncert.nic.in/textbook.php?jemh1=0-14" target="_blank" rel="noopener" class="ebook-btn-dl" title="Download official textbook PDF from NCERT/BSTBPC portal">
+          ⬇️ Official PDF
+        </a>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="ebook-card rv" data-class="class11" data-stream="science">
+    <div class="ebook-card-top">
+      <div class="ebook-icon">⚛️</div>
+      <div class="ebook-stream-badge">+2 Science I.Sc.</div>
+    </div>
+    <div class="ebook-body">
+      <div class="ebook-class">Class 11 (+2)</div>
+      <div class="ebook-title">Physics Part-1 and 2 — Class 11 (+2)</div>
+      <div class="ebook-desc">Units and Measurements, Motion in a Straight Line, Motion in a Plane, Laws of Motion, Work Energy and Power, System of Particles and Rotational Motion, Gravitation, Mechanical Properties of Solids and Fluids, Thermal Properties, Thermodynamics, Kinetic Theory, Oscillations, Waves.</div>
+      <div class="ebook-actions">
+        <button class="ebook-btn-read" onclick='openEbookModal("Physics Part-1 and 2 — Class 11 (+2)", "Class 11 (+2)", "+2 Science I.Sc.", "Units and Measurements, Motion in a Straight Line, Motion in a Plane, Laws of Motion, Work Energy and Power, System of Particles and Rotational Motion, Gravitation, Mechanical Properties of Solids and Fluids, Thermal Properties, Thermodynamics, Kinetic Theory, Oscillations, Waves.", ["1. Units and Measurements","2. Motion in a Straight Line","3. Motion in a Plane","4. Laws of Motion","5. Work, Energy and Power","6. System of Particles and Rotational Motion","7. Gravitation","8. Mechanical Properties of Solids","9. Mechanical Properties of Fluids","10. Thermal Properties of Matter","11. Thermodynamics","12. Kinetic Theory","13. Oscillations","14. Waves"], "https://ncert.nic.in/textbook.php?keph1=0-8")'>
+          📖 Read Chapters
+        </button>
+        <a href="https://ncert.nic.in/textbook.php?keph1=0-8" target="_blank" rel="noopener" class="ebook-btn-dl" title="Download official textbook PDF from NCERT/BSTBPC portal">
+          ⬇️ Official PDF
+        </a>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="ebook-card rv" data-class="class11" data-stream="science">
+    <div class="ebook-card-top">
+      <div class="ebook-icon">🧪</div>
+      <div class="ebook-stream-badge">+2 Science I.Sc.</div>
+    </div>
+    <div class="ebook-body">
+      <div class="ebook-class">Class 11 (+2)</div>
+      <div class="ebook-title">Chemistry Part-1 and 2 — Class 11 (+2)</div>
+      <div class="ebook-desc">Some Basic Concepts of Chemistry, Structure of Atom, Classification of Elements and Periodicity, Chemical Bonding and Molecular Structure, Chemical Thermodynamics, Equilibrium, Redox Reactions, Organic Chemistry: Basic Principles, Hydrocarbons.</div>
+      <div class="ebook-actions">
+        <button class="ebook-btn-read" onclick='openEbookModal("Chemistry Part-1 and 2 — Class 11 (+2)", "Class 11 (+2)", "+2 Science I.Sc.", "Some Basic Concepts of Chemistry, Structure of Atom, Classification of Elements and Periodicity, Chemical Bonding and Molecular Structure, Chemical Thermodynamics, Equilibrium, Redox Reactions, Organic Chemistry: Basic Principles, Hydrocarbons.", ["1. Some Basic Concepts of Chemistry","2. Structure of Atom","3. Classification of Elements and Periodicity","4. Chemical Bonding and Molecular Structure","5. Chemical Thermodynamics","6. Equilibrium","7. Redox Reactions","8. Organic Chemistry: Basic Principles and Techniques","9. Hydrocarbons"], "https://ncert.nic.in/textbook.php?kech1=0-6")'>
+          📖 Read Chapters
+        </button>
+        <a href="https://ncert.nic.in/textbook.php?kech1=0-6" target="_blank" rel="noopener" class="ebook-btn-dl" title="Download official textbook PDF from NCERT/BSTBPC portal">
+          ⬇️ Official PDF
+        </a>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="ebook-card rv" data-class="class12" data-stream="science">
+    <div class="ebook-card-top">
+      <div class="ebook-icon">🧬</div>
+      <div class="ebook-stream-badge">+2 Science I.Sc.</div>
+    </div>
+    <div class="ebook-body">
+      <div class="ebook-class">Class 12 (+2)</div>
+      <div class="ebook-title">Biology — Class 12 (+2 Science)</div>
+      <div class="ebook-desc">Sexual Reproduction in Flowering Plants, Human Reproduction, Reproductive Health, Principles of Inheritance and Variation, Molecular Basis of Inheritance, Evolution, Human Health and Disease, Microbes in Human Welfare, Biotechnology: Principles and Processes, Biotechnology and its Applications, Organisms and Populations, Ecosystem, Biodiversity and Conservation.</div>
+      <div class="ebook-actions">
+        <button class="ebook-btn-read" onclick='openEbookModal("Biology — Class 12 (+2 Science)", "Class 12 (+2)", "+2 Science I.Sc.", "Sexual Reproduction in Flowering Plants, Human Reproduction, Reproductive Health, Principles of Inheritance and Variation, Molecular Basis of Inheritance, Evolution, Human Health and Disease, Microbes in Human Welfare, Biotechnology: Principles and Processes, Biotechnology and its Applications, Organisms and Populations, Ecosystem, Biodiversity and Conservation.", ["1. Sexual Reproduction in Flowering Plants","2. Human Reproduction","3. Reproductive Health","4. Principles of Inheritance and Variation","5. Molecular Basis of Inheritance","6. Evolution","7. Human Health and Disease","8. Microbes in Human Welfare","9. Biotechnology: Principles and Processes","10. Biotechnology and its Applications","11. Organisms and Populations","12. Ecosystem","13. Biodiversity and Conservation"], "https://ncert.nic.in/textbook.php?lebo1=0-13")'>
+          📖 Read Chapters
+        </button>
+        <a href="https://ncert.nic.in/textbook.php?lebo1=0-13" target="_blank" rel="noopener" class="ebook-btn-dl" title="Download official textbook PDF from NCERT/BSTBPC portal">
+          ⬇️ Official PDF
+        </a>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="ebook-card rv" data-class="class12" data-stream="science">
+    <div class="ebook-card-top">
+      <div class="ebook-icon">📐</div>
+      <div class="ebook-stream-badge">+2 Science I.Sc.</div>
+    </div>
+    <div class="ebook-body">
+      <div class="ebook-class">Class 12 (+2)</div>
+      <div class="ebook-title">Mathematics Part-1 and 2 — Class 12 (+2)</div>
+      <div class="ebook-desc">Relations and Functions, Inverse Trigonometric Functions, Matrices, Determinants, Continuity and Differentiability, Application of Derivatives, Integrals, Differential Equations, Vector Algebra, Three Dimensional Geometry, Linear Programming, Probability.</div>
+      <div class="ebook-actions">
+        <button class="ebook-btn-read" onclick='openEbookModal("Mathematics Part-1 and 2 — Class 12 (+2)", "Class 12 (+2)", "+2 Science I.Sc.", "Relations and Functions, Inverse Trigonometric Functions, Matrices, Determinants, Continuity and Differentiability, Application of Derivatives, Integrals, Differential Equations, Vector Algebra, Three Dimensional Geometry, Linear Programming, Probability.", ["1. Relations and Functions","2. Inverse Trigonometric Functions","3. Matrices","4. Determinants","5. Continuity and Differentiability","6. Application of Derivatives","7. Integrals","8. Application of Integrals","9. Differential Equations","10. Vector Algebra","11. Three Dimensional Geometry","12. Linear Programming","13. Probability"], "https://ncert.nic.in/textbook.php?lemh1=0-6")'>
+          📖 Read Chapters
+        </button>
+        <a href="https://ncert.nic.in/textbook.php?lemh1=0-6" target="_blank" rel="noopener" class="ebook-btn-dl" title="Download official textbook PDF from NCERT/BSTBPC portal">
+          ⬇️ Official PDF
+        </a>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="ebook-card rv" data-class="class12" data-stream="commerce">
+    <div class="ebook-card-top">
+      <div class="ebook-icon">📑</div>
+      <div class="ebook-stream-badge">+2 Commerce I.Com.</div>
+    </div>
+    <div class="ebook-body">
+      <div class="ebook-class">Class 12 (+2)</div>
+      <div class="ebook-title">Accountancy: Partnership and Companies — Class 12 (+2)</div>
+      <div class="ebook-desc">Accounting for Partnership: Basic Concepts, Reconstitution of a Partnership Firm (Admission, Retirement/Death of a Partner), Dissolution of Partnership Firm, Accounting for Share Capital, Issue and Redemption of Debentures, Financial Statements of a Company, Analysis of Financial Statements, Accounting Ratios, Cash Flow Statement.</div>
+      <div class="ebook-actions">
+        <button class="ebook-btn-read" onclick='openEbookModal("Accountancy: Partnership and Companies — Class 12 (+2)", "Class 12 (+2)", "+2 Commerce I.Com.", "Accounting for Partnership: Basic Concepts, Reconstitution of a Partnership Firm (Admission, Retirement/Death of a Partner), Dissolution of Partnership Firm, Accounting for Share Capital, Issue and Redemption of Debentures, Financial Statements of a Company, Analysis of Financial Statements, Accounting Ratios, Cash Flow Statement.", ["1. Accounting for Partnership: Basic Concepts","2. Reconstitution of a Partnership Firm – Admission of a Partner","3. Reconstitution – Retirement/Death of a Partner","4. Dissolution of Partnership Firm","5. Accounting for Share Capital","6. Issue and Redemption of Debentures","7. Financial Statements of a Company","8. Analysis of Financial Statements","9. Accounting Ratios","10. Cash Flow Statement"], "https://ncert.nic.in/textbook.php?leac1=0-5")'>
+          📖 Read Chapters
+        </button>
+        <a href="https://ncert.nic.in/textbook.php?leac1=0-5" target="_blank" rel="noopener" class="ebook-btn-dl" title="Download official textbook PDF from NCERT/BSTBPC portal">
+          ⬇️ Official PDF
+        </a>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="ebook-card rv" data-class="class12" data-stream="commerce">
+    <div class="ebook-card-top">
+      <div class="ebook-icon">💻</div>
+      <div class="ebook-stream-badge">+2 ICT / Comp. Sci.</div>
+    </div>
+    <div class="ebook-body">
+      <div class="ebook-class">Class 12 (+2)</div>
+      <div class="ebook-title">Computer Science with Python — Class 11 and 12</div>
+      <div class="ebook-desc">Python Programming, Functions, Data Structures (Stacks and Queues), File Handling (Text, Binary, CSV), Computer Networks, Relational Database and SQL, Python-SQL Interface, Cyber Safety and Ethics.</div>
+      <div class="ebook-actions">
+        <button class="ebook-btn-read" onclick='openEbookModal("Computer Science with Python — Class 11 and 12", "Class 12 (+2)", "+2 ICT / Comp. Sci.", "Python Programming, Functions, Data Structures (Stacks and Queues), File Handling (Text, Binary, CSV), Computer Networks, Relational Database and SQL, Python-SQL Interface, Cyber Safety and Ethics.", ["1. Python Review and Object-Oriented Principles","2. Functions and Modules in Python","3. File Handling in Python","4. Data Structures: Stacks and Queues","5. Computer Networks and Protocols","6. Database Concepts and Structured Query Language (SQL)","7. Interfacing Python with SQL Database","8. Society, Law and Cyber Ethics"], "https://ncert.nic.in/textbook.php?lecs1=0-8")'>
+          📖 Read Chapters
+        </button>
+        <a href="https://ncert.nic.in/textbook.php?lecs1=0-8" target="_blank" rel="noopener" class="ebook-btn-dl" title="Download official textbook PDF from NCERT/BSTBPC portal">
+          ⬇️ Official PDF
+        </a>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="ebook-card rv" data-class="class12" data-stream="arts">
+    <div class="ebook-card-top">
+      <div class="ebook-icon">🗳️</div>
+      <div class="ebook-stream-badge">+2 Arts I.A.</div>
+    </div>
+    <div class="ebook-body">
+      <div class="ebook-class">Class 12 (+2)</div>
+      <div class="ebook-title">Political Science — Class 12 (+2 Arts)</div>
+      <div class="ebook-desc">Contemporary World Politics (Cold War Era, End of Bipolarity, South Asia, International Organisations) and Politics in India since Independence (Nation-building, Planned Development, India's External Relations).</div>
+      <div class="ebook-actions">
+        <button class="ebook-btn-read" onclick='openEbookModal("Political Science — Class 12 (+2 Arts)", "Class 12 (+2)", "+2 Arts I.A.", "Contemporary World Politics (Cold War Era, End of Bipolarity, South Asia, International Organisations) and Politics in India since Independence (Nation-building, Planned Development, India's External Relations).", ["1. The Cold War Era","2. The End of Bipolarity","3. US Hegemony in World Politics","4. Alternative Centres of Power","5. Contemporary South Asia","6. International Organisations","7. Challenges of Nation-Building","8. Era of One-Party Dominance","9. Politics of Planned Development","10. India's External Relations"], "https://ncert.nic.in/textbook.php?leps1=0-9")'>
+          📖 Read Chapters
+        </button>
+        <a href="https://ncert.nic.in/textbook.php?leps1=0-9" target="_blank" rel="noopener" class="ebook-btn-dl" title="Download official textbook PDF from NCERT/BSTBPC portal">
+          ⬇️ Official PDF
+        </a>
+      </div>
+    </div>
+  </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- eBook Interactive Chapter Reader Modal -->
+  <div id="ebookModal" class="ebook-modal" role="dialog" aria-modal="true" aria-labelledby="modalBookTitle">
+    <div class="ebook-modal-content">
+      <div class="ebook-modal-header">
+        <div>
+          <span id="modalBookBadge" class="ebook-stream-badge">NCERT / BSEB</span>
+          <h3 id="modalBookTitle" style="font-family: 'Playfair Display', serif; color: var(--navy); margin-top: 6px; font-size: 1.25rem;">Book Title</h3>
+          <div id="modalBookClass" style="font-size: 0.85rem; color: var(--gray);">Class Details</div>
+        </div>
+        <button class="ebook-modal-close" onclick="closeEbookModal()" aria-label="Close Book Details">✕</button>
+      </div>
+      <div class="ebook-modal-body">
+        <p id="modalBookDesc" style="font-size: 0.9rem; color: #444; line-height: 1.6; margin-bottom: 16px;">Description</p>
+        <h4 style="font-size: 0.92rem; color: var(--red); margin-bottom: 12px; font-weight: 700;">Key Chapters and Syllabi Covered:</h4>
+        <ul id="modalChaptersList" class="modal-chapters-list"></ul>
+      </div>
+      <div class="ebook-modal-footer">
+        <a id="modalDownloadBtn" href="#" target="_blank" rel="noopener" class="submit-btn" style="text-decoration:none; display:inline-flex; align-items:center; gap:8px;">
+          ⬇️ Open Official NCERT/BSEB Text Portal
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-grid">
+        <div class="fcol">
+          <div class="fbrand">P.M. Shri +2 High School</div>
+          <div class="fbrand-sub">Barbigha, Sheikhpura (Bihar) - PIN: 811101</div>
+          <p>The premier government educational institution of Barbigha, serving excellence in education since 3 January 1933 under Bihar School Examination Board (BSEB, Patna).</p>
+          <div style="margin-top: 12px; font-size: 0.8rem; color: #ffcc80;">
+            UDISE Code: 10262907004 | Affiliation: BSEB Patna
+          </div>
+        </div>
+        <div class="fcol">
+          <h4>+2 Academic Streams</h4>
+          <ul>
+            <li><a href="about.html#seats">🔬 I.Sc. Science (333 Seats)</a></li>
+            <li><a href="about.html#seats">🎨 I.A. Arts (120 Seats)</a></li>
+            <li><a href="about.html#seats">📊 I.Com. Commerce (120 Seats)</a></li>
+            <li><a href="contact.html">📋 OFSS Bihar Online Admission</a></li>
+            <li><a href="ebooks.html">📖 State and NCERT Textbooks</a></li>
+            <li><a href="about.html#uniform">👔 Official School Uniform</a></li>
+          </ul>
+        </div>
+        <div class="fcol">
+          <h4>Institutional Contact</h4>
+          <p>
+            📍 Near Sri Babu Chowk / NH-82, Barbigha<br>
+            District Sheikhpura, Bihar - 811101<br><br>
+            📞 Helpline: <a href="tel:06341295000" style="color:var(--gold-light);">06341-295000</a><br>
+            ✉️ Email: <a href="mailto:highschoolbarbigha@gmail.com" style="color:var(--gold-light);">highschoolbarbigha@gmail.com</a><br>
+            ⏰ Office Hours: 9:30 AM – 4:00 PM (Mon–Sat)
+          </p>
+        </div>
+      </div>
+      <div class="fbottom">
+        &copy; 1933–2026 P.M. Shri +2 High School, Barbigha, District Sheikhpura (Bihar). UDISE: 10262907004.<br>
+        All Rights Reserved. Affiliated to Bihar School Examination Board (BSEB, Patna).
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
